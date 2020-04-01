@@ -1550,3 +1550,35 @@ Console input: gmx
 [18:55:12] [server] [cmd] Filiq_ (ID 0): /locations
 [18:55:17] [server] [cmd] Filiq_ (ID 0): /location
 [18:55:17] [server] [cmd] Filiq_ (ID 0): /locations
+[18:55:36] [server] [cmd] Filiq_ (ID 0): /go
+[18:55:37] [chat] [Filiq_]: asd
+[18:59:24] [server] [cmd] Filiq_ (ID 0): /id
+[18:59:29] [server] [cmd] Filiq_ (ID 0): /help
+[18:59:54] [server] [cmd] Filiq_ (ID 0): /frisk
+[18:59:56] [server] [cmd] Filiq_ (ID 0): /frisk 0
+[18:59:59] [server] [cmd] Filiq_ (ID 0): /kill
+[18:59:59] [death] Filiq_ died 255
+[19:00:01] [server] [cmd] Filiq_ (ID 0): /help
+[19:00:04] [server] [cmd] Filiq_ (ID 0): /connection
+[19:00:06] [server] [cmd] Filiq_ (ID 0): /connections
+[19:00:21] [server] [cmd] Filiq_ (ID 0): /statsa
+[19:00:24] [server] [cmd] Filiq_ (ID 0): /stats
+[19:00:26] [server] [cmd] Filiq_ (ID 0): /help
+[19:00:37] [server] [cmd] Filiq_ (ID 0): /seenewbie
+[19:00:39] [server] [cmd] Filiq_ (ID 0): /seenewbie
+[19:00:41] [server] [cmd] Filiq_ (ID 0): /helpme
+[19:00:43] [server] [cmd] Filiq_ (ID 0): /helpmetest
+[19:00:44] [server] [cmd] Filiq_ (ID 0): /helpme test
+[19:00:50] [server] [cmd] Filiq_ (ID 0): /helpers
+[19:00:53] [server] [cmd] Filiq_ (ID 0): /helpers
+[19:00:55] [server] [cmd] Filiq_ (ID 0): /helper
+[19:00:57] [chat] [Filiq_]: newbies
+[19:01:00] [server] [cmd] Filiq_ (ID 0): /help
+[19:01:07] [server] [cmd] Filiq_ (ID 0): /seepms
+[19:01:09] [server] [cmd] Filiq_ (ID 0): /seepms
+[19:01:10] [server] [cmd] Filiq_ (ID 0): /help
+[19:01:59] [server] [cmd] Filiq_ (ID 0): /help
+[19:02:20] [server] [cmd] Filiq_ (ID 0): /hud
+[19:22:32] [server] [cmd] Filiq_ (ID 0): /sleep
+[19:22:34] [server] [cmd] Filiq_ (ID 0): /sleep
+[19:40:54] [part] Filiq_ has left the server (0:2)

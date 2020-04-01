@@ -104,30 +104,6 @@
 				<size value="64"/>
 			</member>
 		</member>
-		<member name="T:eventE" value="15">
-			<tagname value="eventE"/>
-			<member name="C:eEventStat" value="0">
-			</member>
-			<member name="C:eEventCount" value="1">
-			</member>
-			<member name="C:eEventPos" value="2">
-				<tagname value="Float"/>
-				<size value="3"/>
-			</member>
-			<member name="C:eArmourHP" value="5">
-				<tagname value="Float"/>
-				<size value="2"/>
-			</member>
-			<member name="C:eEventWeapons" value="7">
-				<size value="5"/>
-			</member>
-			<member name="C:eEventSkin" value="12">
-			</member>
-			<member name="C:eEventInt" value="13">
-			</member>
-			<member name="C:eEventVW" value="14">
-			</member>
-		</member>
 		<member name="T:groupE" value="403">
 			<tagname value="groupE"/>
 			<member name="C:gGroupName" value="0">
@@ -532,24 +508,23 @@
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="Streamer_OnPlayerConnect"/>
-			<referrer name="CanPlayerUseAnimation"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="IsValidSkin"/>
-			<referrer name="IsPublicSkin"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="IsInvalidNOSVehicle"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="explode"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="invalidNameChange"/>
-			<referrer name="saveBusiness"/>
-			<referrer name="saveHouse"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="IsValidSkin"/>
+			<referrer name="IsPublicSkin"/>
+			<referrer name="IsInvalidNOSVehicle"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="explode"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="saveBusiness"/>
+			<referrer name="saveHouse"/>
+			<referrer name="initiateHospital"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
+			<referrer name="CanPlayerUseAnimation"/>
 			<referrer name="cmd_tie"/>
 		</member>
 		<member name="C:true" value="1">
@@ -558,28 +533,25 @@
 			<referrer name="SetPlayerArmourEx"/>
 			<referrer name="OnPlayerKeyStateChange"/>
 			<referrer name="IsPlayerInZone"/>
-			<referrer name="cmd_vehname"/>
-			<referrer name="cmd_gunname"/>
-			<referrer name="CanPlayerUseAnimation"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
 			<referrer name="IsValidSkin"/>
 			<referrer name="IsPublicSkin"/>
 			<referrer name="IsInvalidNOSVehicle"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="substr_count"/>
-			<referrer name="OnPlayerSpawn"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="getPlayerHouseID"/>
 			<referrer name="getPlayerBusinessID"/>
 			<referrer name="resetPlayerVariables"/>
 			<referrer name="initiateConnections"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
+			<referrer name="Shits"/>
+			<referrer name="cmd_vehname"/>
+			<referrer name="cmd_gunname"/>
+			<referrer name="CanPlayerUseAnimation"/>
 			<referrer name="cmd_gdeposit"/>
 			<referrer name="cmd_confiscate"/>
 			<referrer name="cmd_gwithdraw"/>
@@ -625,13 +597,13 @@
 			<referrer name="cmd_arrest"/>
 		</member>
 		<member name="F:LSPDGates">
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<referrer name="cmd_gate"/>
 		</member>
 		<member name="F:LSPDObjs">
-			<referrer name="SSCANF_OnGameModeInit"/>
-			<referrer name="ShutUp"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="ShutUp"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="F:PlayerPos">
 			<tagname value="Float"/>
@@ -761,14 +733,12 @@
 			<referrer name="OnPlayerSelectObject"/>
 		</member>
 		<member name="F:VehicleNames">
-			<referrer name="cmd_closestcar"/>
-			<referrer name="cmd_vehname"/>
+			<referrer name="OnVehicleMod"/>
 			<referrer name="showStats"/>
 			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="cmd_findcar"/>
 			<referrer name="PurchaseVehicleFromDealer"/>
+			<referrer name="cmd_closestcar"/>
+			<referrer name="cmd_vehname"/>
 			<referrer name="cmd_vmodel"/>
 			<referrer name="cmd_setplayervehicle"/>
 			<referrer name="cmd_fixcar"/>
@@ -778,12 +748,13 @@
 			<referrer name="cmd_accept"/>
 			<referrer name="cmd_gotoplayervehicle"/>
 			<referrer name="cmd_veh"/>
+			<referrer name="cmd_givecar"/>
+			<referrer name="cmd_findcar"/>
 		</member>
 		<member name="F:WeaponNames">
-			<referrer name="cmd_gunname"/>
-			<referrer name="hackerTrigger"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="cmd_gunname"/>
 			<referrer name="cmd_listguns"/>
 			<referrer name="cmd_frisk"/>
 			<referrer name="cmd_giveweapon"/>
@@ -830,12 +801,13 @@
 			<referrer name="OnPlayerDisconnect"/>
 			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnPlayerStateChange"/>
-			<referrer name="cmd_setweather"/>
-			<referrer name="cmd_savedata"/>
-			<referrer name="SendToEvent"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnVehicleRespray"/>
+			<referrer name="OnVehiclePaintjob"/>
+			<referrer name="OnEnterExitModShop"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="playerTabbedLoop"/>
 			<referrer name="AFKTimer"/>
 			<referrer name="PlayerPlaySoundEx"/>
@@ -848,18 +820,12 @@
 			<referrer name="submitToAdmins"/>
 			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnVehicleStreamIn"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnVehicleRespray"/>
-			<referrer name="OnVehiclePaintjob"/>
-			<referrer name="OnEnterExitModShop"/>
-			<referrer name="cmd_lockcar"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SetVehicleToRespawnEx"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="nearByMessage"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_setweather"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_viewhelp"/>
 			<referrer name="cmd_helpme"/>
@@ -878,6 +844,7 @@
 			<referrer name="cmd_sms"/>
 			<referrer name="cmd_call"/>
 			<referrer name="cmd_pickup"/>
+			<referrer name="cmd_lockcar"/>
 		</member>
 		<member name="F:YSI_gPlayerC">
 			<referrer name="OnPlayerConnect"/>
@@ -890,12 +857,13 @@
 			<referrer name="OnPlayerDisconnect"/>
 			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnPlayerStateChange"/>
-			<referrer name="cmd_setweather"/>
-			<referrer name="cmd_savedata"/>
-			<referrer name="SendToEvent"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnVehicleRespray"/>
+			<referrer name="OnVehiclePaintjob"/>
+			<referrer name="OnEnterExitModShop"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="playerTabbedLoop"/>
 			<referrer name="AFKTimer"/>
 			<referrer name="PlayerPlaySoundEx"/>
@@ -908,18 +876,12 @@
 			<referrer name="submitToAdmins"/>
 			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnVehicleStreamIn"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnVehicleRespray"/>
-			<referrer name="OnVehiclePaintjob"/>
-			<referrer name="OnEnterExitModShop"/>
-			<referrer name="cmd_lockcar"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SetVehicleToRespawnEx"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="nearByMessage"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_setweather"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_viewhelp"/>
 			<referrer name="cmd_helpme"/>
@@ -938,6 +900,7 @@
 			<referrer name="cmd_sms"/>
 			<referrer name="cmd_call"/>
 			<referrer name="cmd_pickup"/>
+			<referrer name="cmd_lockcar"/>
 		</member>
 		<member name="F:YSI_g_OPC">
 			<tagname value="bool"/>
@@ -950,6 +913,26 @@
 			<referrer name="OnPlayerDisconnect"/>
 		</member>
 		<member name="F:__date">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
+		</member>
+		<member name="F:__file">
 		</member>
 		<member name="F:__file">
 		</member>
@@ -1024,12 +1007,12 @@
 		</member>
 		<member name="F:businessVariables">
 			<referrer name="OnQueryFinish"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="createRelevantItems"/>
 			<referrer name="saveBusiness"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="businessTypeMessages"/>
 			<referrer name="PurchaseVehicleFromDealer"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="getPlayerBusinessID"/>
 			<referrer name="cmd_bbalance"/>
 			<referrer name="cmd_business"/>
@@ -1059,16 +1042,6 @@
 			<referrer name="OnGameModeExit"/>
 			<referrer name="initiateConnections"/>
 		</member>
-		<member name="F:eventVariables">
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="antiCheat"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-		</member>
 		<member name="F:fishNames">
 			<referrer name="globalPlayerLoop"/>
 		</member>
@@ -1083,15 +1056,15 @@
 			<referrer name="globalPlayerLoop"/>
 		</member>
 		<member name="F:groupVariables">
+			<referrer name="OnQueryFinish"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="sendDepartmentMessage"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="showStats"/>
 			<referrer name="SendToGroupType"/>
 			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="saveGroup"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_elevator"/>
 			<referrer name="cmd_gate"/>
@@ -1143,9 +1116,9 @@
 		</member>
 		<member name="F:houseVariables">
 			<referrer name="OnQueryFinish"/>
-			<referrer name="saveHouse"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="saveHouse"/>
 			<referrer name="getPlayerHouseID"/>
 			<referrer name="cmd_trackhouse"/>
 			<referrer name="cmd_home"/>
@@ -1168,15 +1141,14 @@
 			<referrer name="cmd_buyhouse"/>
 		</member>
 		<member name="F:iGMXTick">
-			<referrer name="restartTimer"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="restartTimer"/>
 		</member>
 		<member name="F:iGMXTimer">
-			<referrer name="restartTimer"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="restartTimer"/>
 		</member>
 		<member name="F:iTarget">
-			<referrer name="cmd_givecar"/>
 			<referrer name="cmd_acceptbackup"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_suspendbank"/>
@@ -1185,11 +1157,12 @@
 			<referrer name="cmd_setadminlevel"/>
 			<referrer name="cmd_namechanges"/>
 			<referrer name="cmd_changename"/>
+			<referrer name="cmd_givecar"/>
 		</member>
 		<member name="F:jobVariables">
 			<referrer name="OnQueryFinish"/>
-			<referrer name="showStats"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="showStats"/>
 			<referrer name="cmd_fixcar"/>
 			<referrer name="cmd_colourcar"/>
 			<referrer name="cmd_trackplates"/>
@@ -1208,6 +1181,58 @@
 			<referrer name="globalPlayerLoop"/>
 		</member>
 		<member name="F:playerVariables">
+			<referrer name="OnPlayerCommandReceived"/>
+			<referrer name="SSCANF_OnPlayerConnect"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnPlayerInteriorChange"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="OnPlayerRequestSpawn"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="OnPlayerDeath"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnVehicleRespray"/>
+			<referrer name="OnVehiclePaintjob"/>
+			<referrer name="OnEnterExitModShop"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="playerTabbedLoop"/>
+			<referrer name="AFKTimer"/>
+			<referrer name="GetClosestPlayer"/>
+			<referrer name="SendToGroup"/>
+			<referrer name="SendToFrequency"/>
+			<referrer name="sendDepartmentMessage"/>
+			<referrer name="givePlayerValidWeapon"/>
+			<referrer name="firstPlayerSpawn"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="givePlayerWeapons"/>
+			<referrer name="removePlayerWeapon"/>
+			<referrer name="antiCheat"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="scriptBan"/>
+			<referrer name="showStats"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="submitToAdmins"/>
+			<referrer name="RL_OnPlayerStateChange"/>
+			<referrer name="OnVehicleStreamIn"/>
+			<referrer name="getPlayerCheckpointReason"/>
+			<referrer name="initiateHospital"/>
+			<referrer name="savePlayerData"/>
+			<referrer name="businessTypeMessages"/>
+			<referrer name="PurchaseVehicleFromDealer"/>
+			<referrer name="DestroyPlayerVehicle"/>
+			<referrer name="SetAllVehiclesToRespawn"/>
+			<referrer name="SetVehicleToRespawnEx"/>
+			<referrer name="SpawnPlayerVehicle"/>
+			<referrer name="nearByMessage"/>
+			<referrer name="getPlayerHouseID"/>
+			<referrer name="getPlayerBusinessID"/>
+			<referrer name="resetPlayerVariables"/>
+			<referrer name="validResetPlayerWeapons"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_setweather"/>
 			<referrer name="cmd_forcelogout"/>
@@ -1251,69 +1276,6 @@
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_dance"/>
 			<referrer name="cmd_stopanim"/>
-			<referrer name="SendToEvent"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="playerTabbedLoop"/>
-			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="AFKTimer"/>
-			<referrer name="GetClosestPlayer"/>
-			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="SendToGroup"/>
-			<referrer name="SendToFrequency"/>
-			<referrer name="sendDepartmentMessage"/>
-			<referrer name="givePlayerValidWeapon"/>
-			<referrer name="firstPlayerSpawn"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="givePlayerWeapons"/>
-			<referrer name="removePlayerWeapon"/>
-			<referrer name="antiCheat"/>
-			<referrer name="hackerTrigger"/>
-			<referrer name="scriptBan"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="showStats"/>
-			<referrer name="invalidNameChange"/>
-			<referrer name="submitToAdmins"/>
-			<referrer name="OnPlayerInteriorChange"/>
-			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="OnVehicleStreamIn"/>
-			<referrer name="getPlayerCheckpointReason"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="initiateHospital"/>
-			<referrer name="OnPlayerRequestSpawn"/>
-			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="savePlayerData"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="businessTypeMessages"/>
-			<referrer name="OnVehicleRespray"/>
-			<referrer name="OnVehiclePaintjob"/>
-			<referrer name="OnEnterExitModShop"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_abandoncar"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="cmd_lockcar"/>
-			<referrer name="cmd_findcar"/>
-			<referrer name="cmd_unmodcar"/>
-			<referrer name="PurchaseVehicleFromDealer"/>
-			<referrer name="DestroyPlayerVehicle"/>
-			<referrer name="SetAllVehiclesToRespawn"/>
-			<referrer name="SetVehicleToRespawnEx"/>
-			<referrer name="SpawnPlayerVehicle"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="nearByMessage"/>
-			<referrer name="OnPlayerText"/>
-			<referrer name="getPlayerHouseID"/>
-			<referrer name="getPlayerBusinessID"/>
-			<referrer name="resetPlayerVariables"/>
-			<referrer name="validResetPlayerWeapons"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_elevator"/>
 			<referrer name="cmd_gate"/>
 			<referrer name="cmd_shakehand"/>
@@ -1498,6 +1460,11 @@
 			<referrer name="cmd_pickup"/>
 			<referrer name="cmd_togphone"/>
 			<referrer name="cmd_hangup"/>
+			<referrer name="cmd_abandoncar"/>
+			<referrer name="cmd_givecar"/>
+			<referrer name="cmd_lockcar"/>
+			<referrer name="cmd_findcar"/>
+			<referrer name="cmd_unmodcar"/>
 		</member>
 		<member name="F:result">
 			<referrer name="OnQueryFinish"/>
@@ -1506,8 +1473,8 @@
 			<referrer name="cmd_lockbusiness"/>
 		</member>
 		<member name="F:scriptTimers">
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="OnGameModeExit"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="F:spikeVariables">
 			<referrer name="RL_OnPlayerUpdate"/>
@@ -1518,7 +1485,6 @@
 		<member name="F:systemVariables">
 			<referrer name="OnQueryFinish"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="DestroyPlayerVehicle"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SpawnPlayerVehicle"/>
@@ -1534,14 +1500,15 @@
 			<referrer name="cmd_despawnavehicles"/>
 			<referrer name="cmd_vdespawn"/>
 			<referrer name="cmd_serverstats"/>
+			<referrer name="cmd_unmodcar"/>
 		</member>
 		<member name="F:szLargeString">
 			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
 			<referrer name="createRelevantItems"/>
 			<referrer name="saveHouse"/>
 			<referrer name="saveGroup"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="cmd_setnewbiespawn"/>
 		</member>
 		<member name="F:szMediumString">
@@ -1549,28 +1516,25 @@
 			<referrer name="cmd_viewhelp"/>
 		</member>
 		<member name="F:szMessage">
-			<referrer name="cmd_forcelogout"/>
-			<referrer name="cmd_vehname"/>
-			<referrer name="cmd_gunname"/>
-			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="OnPlayerCommandReceived"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="initiateTutorial"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="initiateTutorial"/>
 			<referrer name="showStats"/>
 			<referrer name="suspensionCheck"/>
 			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="getPlayerCheckpointReason"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="cmd_findcar"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_forcelogout"/>
+			<referrer name="cmd_vehname"/>
+			<referrer name="cmd_gunname"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_time"/>
 			<referrer name="cmd_acceptbackup"/>
@@ -1631,8 +1595,20 @@
 			<referrer name="cmd_vdespawn"/>
 			<referrer name="cmd_accent"/>
 			<referrer name="cmd_sms"/>
+			<referrer name="cmd_givecar"/>
+			<referrer name="cmd_findcar"/>
 		</member>
 		<member name="F:szPlayerName">
+			<referrer name="OnPlayerCommandReceived"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="scriptBan"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_forcelogout"/>
 			<referrer name="cmd_ban"/>
@@ -1643,18 +1619,6 @@
 			<referrer name="cmd_unban"/>
 			<referrer name="cmd_explode"/>
 			<referrer name="cmd_sethelper"/>
-			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="hackerTrigger"/>
-			<referrer name="scriptBan"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_backup"/>
 			<referrer name="cmd_acceptbackup"/>
@@ -1721,15 +1685,16 @@
 			<referrer name="cmd_pay"/>
 			<referrer name="cmd_sms"/>
 			<referrer name="cmd_call"/>
+			<referrer name="cmd_givecar"/>
 		</member>
 		<member name="F:szQueryOutput">
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="getIdFromName"/>
+			<referrer name="saveAsset"/>
+			<referrer name="initiateConnections"/>
 			<referrer name="cmd_unbanip"/>
 			<referrer name="cmd_unban"/>
-			<referrer name="getIdFromName"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="saveAsset"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="initiateConnections"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_suspendbank"/>
 			<referrer name="cmd_btype"/>
@@ -1737,9 +1702,9 @@
 			<referrer name="cmd_namechanges"/>
 		</member>
 		<member name="F:szServerWebsite">
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="F:szSmallString">
 			<referrer name="OnQueryFinish"/>
@@ -1747,6 +1712,7 @@
 			<referrer name="cmd_buy"/>
 		</member>
 		<member name="F:temp">
+			<referrer name="antiCheat"/>
 			<referrer name="cmd_rap"/>
 			<referrer name="cmd_chat"/>
 			<referrer name="cmd_gesture"/>
@@ -1770,11 +1736,18 @@
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_bar"/>
 			<referrer name="cmd_dance"/>
-			<referrer name="antiCheat"/>
 			<referrer name="cmd_hangup"/>
 		</member>
 		<member name="F:textdrawVariables">
 			<tagname value="Text"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="firstPlayerSpawn"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="globalPlayerLoop"/>
+			<referrer name="Shits"/>
 			<referrer name="cmd_piss"/>
 			<referrer name="cmd_handsup"/>
 			<referrer name="cmd_drunk"/>
@@ -1798,14 +1771,6 @@
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_dance"/>
 			<referrer name="cmd_stopanim"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
-			<referrer name="firstPlayerSpawn"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_accepthelp"/>
 			<referrer name="OnPlayerClickPlayer"/>
 			<referrer name="cmd_spec"/>
@@ -1814,8 +1779,8 @@
 			<referrer name="RL_OnPlayerUpdate"/>
 		</member>
 		<member name="F:validWeatherIDs">
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="F:vehCount">
 			<referrer name="cmd_veh"/>
@@ -1833,13 +1798,13 @@
 			<referrer name="cmd_savevehicle"/>
 		</member>
 		<member name="F:weatherVariables">
-			<referrer name="cmd_setweather"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
 			<referrer name="OnPlayerInteriorChange"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="syncPlayerTime"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="Shits"/>
+			<referrer name="cmd_setweather"/>
 			<referrer name="cmd_serverstats"/>
 		</member>
 		<member name="F:zcmd_g_HasOPCE">
@@ -1926,8 +1891,8 @@
 		<member name="M:operator-(Float:,_:)" syntax="operator-(Float:,_:)(oper1, oper2)">
 			<tagname value="Float"/>
 			<stacksize value="4"/>
-			<referrer name="cmd_explode"/>
 			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_slap"/>
 			<dependency name="float"/>
 			<dependency name="floatsub"/>
@@ -1940,10 +1905,10 @@
 		<member name="M:operator+(Float:,_:)" syntax="operator+(Float:,_:)(oper1, oper2)">
 			<tagname value="Float"/>
 			<stacksize value="4"/>
-			<referrer name="cmd_explode"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="PlayerFacePlayer"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_get"/>
 			<referrer name="cmd_gotoplayervehicle"/>
 			<referrer name="cmd_goto"/>
@@ -2024,10 +1989,10 @@
 			<referrer name="crossp"/>
 			<referrer name="GetDistanceFromPointToLine"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="OnQueryFinish"/>
 			<referrer name="GetDistanceBetweenPlayers"/>
 			<referrer name="GetDistancePlayerVeh"/>
 			<referrer name="IsVehicleInRangeOfPoint"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
 			<referrer name="cmd_deployspike"/>
 			<param name="oper1">
@@ -2043,7 +2008,6 @@
 			<referrer name="operator++(Float:)"/>
 			<referrer name="crossp"/>
 			<referrer name="GetDistanceFromPointToLine"/>
-			<referrer name="cmd_explode"/>
 			<referrer name="GetDistanceBetweenPlayers"/>
 			<referrer name="GetDistancePlayerVeh"/>
 			<referrer name="GetPlayerSpeed"/>
@@ -2052,6 +2016,7 @@
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="GetXYInFrontOfPlayer"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_accept"/>
 			<param name="oper1">
 				<paraminfo>Float </paraminfo>
@@ -2093,23 +2058,22 @@
 		<member name="M:Float:operator=(_:)" syntax="Float:operator=(_:)(oper)">
 			<tagname value="Float"/>
 			<attribute name="native"/>
-			<referrer name="cmd_explode"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="unixTimeConvert"/>
 			<referrer name="playerTabbedLoop"/>
 			<referrer name="GetClosestPlayer"/>
 			<referrer name="GetClosestVehicle"/>
 			<referrer name="firstPlayerSpawn"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="initiateHospital"/>
-			<referrer name="OnPlayerSpawn"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="VendDrink"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="resetPlayerVariables"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
+			<referrer name="Shits"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_elevator"/>
 			<referrer name="cmd_gate"/>
 			<referrer name="cmd_destroyspike"/>
@@ -2166,9 +2130,9 @@
 		<member name="M:operator&gt;(Float:,Float:)" syntax="operator&gt;(Float:,Float:)(oper1, oper2)">
 			<tagname value="bool"/>
 			<stacksize value="4"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="IsVehicleInRangeOfPoint"/>
 			<referrer name="VendDrink"/>
-			<referrer name="OnDialogResponse"/>
 			<dependency name="floatcmp"/>
 			<param name="oper1">
 				<paraminfo>Float </paraminfo>
@@ -2371,12 +2335,13 @@
 			<param name="componentid">
 			</param>
 		</member>
-		<member name="M:AntiDeAMX" syntax="AntiDeAMX()">
-			<stacksize value="26"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
-		</member>
 		<member name="M:ApplyAnimation" syntax="ApplyAnimation(playerid, animlib[], animname[], fDelta, loop, lockx, locky, freeze, time, forcesync)">
 			<attribute name="native"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="PreloadAnimLib"/>
+			<referrer name="VendDrink"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_drunk"/>
 			<referrer name="cmd_bomb"/>
 			<referrer name="cmd_rob"/>
@@ -2433,11 +2398,6 @@
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_bar"/>
 			<referrer name="cmd_stopanim"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="PreloadAnimLib"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="VendDrink"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_cuff"/>
 			<referrer name="cmd_uncuff"/>
 			<referrer name="cmd_accept"/>
@@ -2605,8 +2565,8 @@
 		</member>
 		<member name="M:ClearAnimations" syntax="ClearAnimations(playerid, forcesync)">
 			<attribute name="native"/>
-			<referrer name="cmd_stopanim"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_stopanim"/>
 			<referrer name="cmd_uncuff"/>
 			<param name="playerid">
 			</param>
@@ -2628,9 +2588,9 @@
 		<member name="M:CreateDynamic3DTextLabel" syntax="CreateDynamic3DTextLabel(text[], color, x, y, z, drawdistance, attachedplayer, attachedvehicle, testlos, worldid, interiorid, playerid, streamdistance)">
 			<tagname value="Text3D"/>
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
-			<referrer name="playerTabbedLoop"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="playerTabbedLoop"/>
+			<referrer name="Shits"/>
 			<referrer name="cmd_gsafepos"/>
 			<referrer name="cmd_asellbusiness"/>
 			<referrer name="cmd_asellhouse"/>
@@ -2677,10 +2637,10 @@
 		</member>
 		<member name="M:CreateDynamicObject" syntax="CreateDynamicObject(modelid, x, y, z, rx, ry, rz, worldid, interiorid, playerid, streamdistance)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="OnQueryFinish"/>
 			<referrer name="GymMap"/>
 			<referrer name="LSMall"/>
-			<referrer name="OnQueryFinish"/>
+			<referrer name="Shits"/>
 			<referrer name="cmd_deployspike"/>
 			<param name="modelid">
 			</param>
@@ -2714,8 +2674,8 @@
 		</member>
 		<member name="M:CreateDynamicPickup" syntax="CreateDynamicPickup(modelid, type, x, y, z, worldid, interiorid, playerid, streamdistance)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="Shits"/>
 			<referrer name="cmd_gsafepos"/>
 			<referrer name="cmd_asellbusiness"/>
 			<referrer name="cmd_asellhouse"/>
@@ -2801,10 +2761,10 @@
 		</member>
 		<member name="M:DeletePVar" syntax="DeletePVar(playerid, varname[])">
 			<attribute name="native"/>
-			<referrer name="initiateTutorial"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="OnEnterExitModShop"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateTutorial"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_cancelbackup"/>
 			<referrer name="cmd_unsuspendbank"/>
@@ -2821,8 +2781,8 @@
 		</member>
 		<member name="M:DestroyDynamic3DTextLabel" syntax="DestroyDynamic3DTextLabel(id)">
 			<attribute name="native"/>
-			<referrer name="playerTabbedLoop"/>
 			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="playerTabbedLoop"/>
 			<referrer name="cmd_gsafepos"/>
 			<referrer name="cmd_asellbusiness"/>
 			<referrer name="cmd_asellhouse"/>
@@ -2859,9 +2819,9 @@
 		</member>
 		<member name="M:DestroyPlayerVehicle" syntax="DestroyPlayerVehicle(playerid)">
 			<stacksize value="5"/>
-			<referrer name="cmd_abandoncar"/>
 			<referrer name="cmd_setplayervehicle"/>
 			<referrer name="cmd_accept"/>
+			<referrer name="cmd_abandoncar"/>
 			<dependency name="DestroyVehicle"/>
 			<dependency name="doesVehicleExist"/>
 			<dependency name="pCarColour"/>
@@ -2881,19 +2841,19 @@
 		</member>
 		<member name="M:DestroyVehicle" syntax="DestroyVehicle(vehicleid)">
 			<attribute name="native"/>
-			<referrer name="cmd_forcelogout"/>
-			<referrer name="AFKTimer"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="cmd_unmodcar"/>
+			<referrer name="AFKTimer"/>
 			<referrer name="DestroyPlayerVehicle"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SetVehicleToRespawnEx"/>
 			<referrer name="SpawnPlayerVehicle"/>
+			<referrer name="cmd_forcelogout"/>
 			<referrer name="cmd_vmodel"/>
 			<referrer name="cmd_vmove"/>
 			<referrer name="cmd_despawnavehicles"/>
 			<referrer name="cmd_vdespawn"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="vehicleid">
 			</param>
 		</member>
@@ -2905,20 +2865,20 @@
 		</member>
 		<member name="M:DisableInteriorEnterExits" syntax="DisableInteriorEnterExits()">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="M:DisablePlayerCheckpoint" syntax="DisablePlayerCheckpoint(playerid)">
 			<attribute name="native"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="cmd_abandoncar"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_killcheckpoint"/>
+			<referrer name="cmd_abandoncar"/>
 			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:EnableStuntBonusForAll" syntax="EnableStuntBonusForAll(enable)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="enable">
 			</param>
 		</member>
@@ -3035,8 +2995,8 @@
 		</member>
 		<member name="M:GetClosestVehicle" syntax="GetClosestVehicle(playerid, exception)">
 			<stacksize value="8"/>
-			<referrer name="cmd_closestcar"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="cmd_closestcar"/>
 			<referrer name="cmd_detain"/>
 			<dependency name="Float:operator=(_:)"/>
 			<dependency name="operator&gt;(Float:,_:)"/>
@@ -3203,14 +3163,14 @@
 		<member name="M:GetPVarInt" syntax="GetPVarInt(playerid, varname[])">
 			<attribute name="native"/>
 			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="loginCheck"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="invalidNameChange"/>
 			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="forceAdminConfirmPIN"/>
-			<referrer name="savePlayerData"/>
 			<referrer name="OnEnterExitModShop"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="loginCheck"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="forceAdminConfirmPIN"/>
+			<referrer name="savePlayerData"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_acceptbackup"/>
 			<referrer name="cmd_setnewbiespawn"/>
@@ -3228,8 +3188,8 @@
 		<member name="M:GetPVarString" syntax="GetPVarString(playerid, varname[], string_return[], len)">
 			<attribute name="native"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="suspensionCheck"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="suspensionCheck"/>
 			<referrer name="cmd_accepthelp"/>
 			<referrer name="cmd_viewhelp"/>
 			<param name="playerid">
@@ -3245,9 +3205,9 @@
 		</member>
 		<member name="M:GetPVarType" syntax="GetPVarType(playerid, varname[])">
 			<attribute name="native"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="initiateTutorial"/>
 			<referrer name="suspensionCheck"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="cmd_accepthelp"/>
 			<referrer name="cmd_viewhelp"/>
 			<param name="playerid">
@@ -3297,7 +3257,6 @@
 		<member name="M:GetPlayerArmour" syntax="GetPlayerArmour(playerid, &amp;armour)">
 			<attribute name="native"/>
 			<referrer name="OnPlayerUpdate"/>
-			<referrer name="cmd_joinevent"/>
 			<referrer name="showStats"/>
 			<referrer name="savePlayerData"/>
 			<referrer name="cmd_adminduty"/>
@@ -3395,11 +3354,10 @@
 		<member name="M:GetPlayerHealth" syntax="GetPlayerHealth(playerid, &amp;health)">
 			<attribute name="native"/>
 			<referrer name="OnPlayerUpdate"/>
-			<referrer name="cmd_joinevent"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="showStats"/>
 			<referrer name="savePlayerData"/>
 			<referrer name="VendDrink"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_adminduty"/>
 			<referrer name="OnPlayerClickPlayer"/>
@@ -3413,15 +3371,13 @@
 		</member>
 		<member name="M:GetPlayerInterior" syntax="GetPlayerInterior(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_setweather"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_eventproperties"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="savePlayerData"/>
 			<referrer name="OnVehicleMod"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="savePlayerData"/>
 			<referrer name="syncPlayerTime"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_setweather"/>
 			<referrer name="cmd_deployspike"/>
 			<referrer name="cmd_lspd"/>
 			<referrer name="cmd_track"/>
@@ -3445,10 +3401,10 @@
 			<referrer name="GetPlayerCountryCode"/>
 			<referrer name="GetPlayerCountryCode3"/>
 			<referrer name="GetPlayerCountryName"/>
-			<referrer name="cmd_ban"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="scriptBan"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="scriptBan"/>
+			<referrer name="cmd_ban"/>
 			<referrer name="cmd_pay"/>
 			<param name="playerid">
 			</param>
@@ -3503,6 +3459,18 @@
 		<member name="M:GetPlayerName" syntax="GetPlayerName(playerid, name[], len)">
 			<attribute name="native"/>
 			<referrer name="RL_OnPlayerConnect"/>
+			<referrer name="OnPlayerCommandReceived"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="scriptBan"/>
+			<referrer name="RL_OnPlayerStateChange"/>
+			<referrer name="resetPlayerVariables"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_forcelogout"/>
 			<referrer name="cmd_ban"/>
@@ -3512,21 +3480,6 @@
 			<referrer name="cmd_omute"/>
 			<referrer name="cmd_explode"/>
 			<referrer name="cmd_sethelper"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="hackerTrigger"/>
-			<referrer name="scriptBan"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
-			<referrer name="resetPlayerVariables"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_backup"/>
 			<referrer name="cmd_acceptbackup"/>
@@ -3607,6 +3560,7 @@
 			<referrer name="cmd_pay"/>
 			<referrer name="cmd_sms"/>
 			<referrer name="cmd_call"/>
+			<referrer name="cmd_givecar"/>
 			<param name="playerid">
 			</param>
 			<param name="name">
@@ -3621,21 +3575,19 @@
 			<referrer name="OnPlayerStateChange"/>
 			<referrer name="GetPlayer2DZone"/>
 			<referrer name="GetPlayer3DZone"/>
-			<referrer name="cmd_explode"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_eventproperties"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="OnPlayerDeath"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="AFKTimer"/>
 			<referrer name="GetDistanceBetweenPlayers"/>
 			<referrer name="GetDistancePlayerVeh"/>
 			<referrer name="IsPlayerInRangeOfPlayer"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="savePlayerData"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="nearByMessage"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="GetXYInFrontOfPlayer"/>
 			<referrer name="IsPlayerAimingAtPlayer"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_deployspike"/>
 			<referrer name="cmd_setplayervehicle"/>
 			<referrer name="cmd_cuff"/>
@@ -3681,9 +3633,9 @@
 		</member>
 		<member name="M:GetPlayerSpecialAction" syntax="GetPlayerSpecialAction(playerid)">
 			<attribute name="native"/>
-			<referrer name="antiCheat"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnPlayerText"/>
+			<referrer name="antiCheat"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_confiscate"/>
 			<referrer name="cmd_fingerprint"/>
@@ -3712,15 +3664,13 @@
 		</member>
 		<member name="M:GetPlayerState" syntax="GetPlayerState(playerid)">
 			<attribute name="native"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="playerTabbedLoop"/>
+			<referrer name="antiCheat"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_closestcar"/>
 			<referrer name="CanPlayerUseAnimation"/>
 			<referrer name="cmd_stopanim"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="playerTabbedLoop"/>
-			<referrer name="antiCheat"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="cmd_unmodcar"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_deployspike"/>
 			<referrer name="cmd_eject"/>
@@ -3730,15 +3680,12 @@
 			<referrer name="cmd_get"/>
 			<referrer name="cmd_gotoplayervehicle"/>
 			<referrer name="cmd_goto"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:GetPlayerVehicleID" syntax="GetPlayerVehicleID(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_explode"/>
-			<referrer name="checkVehicleSeat"/>
-			<referrer name="GetPlayerSpeed"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
@@ -3746,7 +3693,11 @@
 			<referrer name="OnVehiclePaintjob"/>
 			<referrer name="OnEnterExitModShop"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="checkVehicleSeat"/>
+			<referrer name="GetPlayerSpeed"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="GetXYInFrontOfPlayer"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_vgroup"/>
 			<referrer name="cmd_vcolour"/>
 			<referrer name="cmd_vrespawn"/>
@@ -3792,13 +3743,11 @@
 		</member>
 		<member name="M:GetPlayerVirtualWorld" syntax="GetPlayerVirtualWorld(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_eventproperties"/>
 			<referrer name="OnPlayerInteriorChange"/>
-			<referrer name="savePlayerData"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="PurchaseVehicleFromDealer"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="savePlayerData"/>
+			<referrer name="PurchaseVehicleFromDealer"/>
 			<referrer name="nearByMessage"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_deployspike"/>
@@ -3829,12 +3778,11 @@
 		</member>
 		<member name="M:GetPlayerWeapon" syntax="GetPlayerWeapon(playerid)">
 			<attribute name="native"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="antiCheat"/>
 			<referrer name="hackerTrigger"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnDialogResponse"/>
 			<referrer name="cmd_giveweapon"/>
 			<referrer name="cmd_vstoreweapon"/>
 			<referrer name="cmd_hstoreweapon"/>
@@ -3844,7 +3792,7 @@
 		</member>
 		<member name="M:GetServerVarAsString" syntax="GetServerVarAsString(varname[], buffer[], len)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="varname">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -3863,8 +3811,8 @@
 		</member>
 		<member name="M:GetVehicleComponentInSlot" syntax="GetVehicleComponentInSlot(vehicleid, slot)">
 			<attribute name="native"/>
-			<referrer name="savePlayerData"/>
 			<referrer name="OnEnterExitModShop"/>
+			<referrer name="savePlayerData"/>
 			<referrer name="cmd_accept"/>
 			<param name="vehicleid">
 			</param>
@@ -3901,16 +3849,16 @@
 		</member>
 		<member name="M:GetVehicleModel" syntax="GetVehicleModel(vehicleid)">
 			<attribute name="native"/>
-			<referrer name="cmd_closestcar"/>
 			<referrer name="OnVehicleSpawn"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnVehicleMod"/>
 			<referrer name="IsAPlane"/>
 			<referrer name="IsABoat"/>
 			<referrer name="IsACopCar"/>
 			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
 			<referrer name="doesVehicleExist"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="OnVehicleMod"/>
+			<referrer name="cmd_closestcar"/>
 			<referrer name="cmd_fixcar"/>
 			<referrer name="cmd_noscar"/>
 			<referrer name="cmd_hydcar"/>
@@ -3925,9 +3873,6 @@
 			<referrer name="IsVehicleInRangeOfPoint"/>
 			<referrer name="saveVehicle"/>
 			<referrer name="savePlayerData"/>
-			<referrer name="cmd_lockcar"/>
-			<referrer name="cmd_findcar"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SetVehicleToRespawnEx"/>
 			<referrer name="cmd_vmove"/>
@@ -3940,6 +3885,9 @@
 			<referrer name="cmd_savevehicle"/>
 			<referrer name="cmd_flipvehicle"/>
 			<referrer name="cmd_gotoplayervehicle"/>
+			<referrer name="cmd_lockcar"/>
+			<referrer name="cmd_findcar"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="vehicleid">
 			</param>
 			<param name="x">
@@ -3954,8 +3902,8 @@
 		</member>
 		<member name="M:GetVehicleVelocity" syntax="GetVehicleVelocity(vehicleid, &amp;X, &amp;Y, &amp;Z)">
 			<attribute name="native"/>
-			<referrer name="cmd_explode"/>
 			<referrer name="GetPlayerSpeed"/>
+			<referrer name="cmd_explode"/>
 			<param name="vehicleid">
 			</param>
 			<param name="X">
@@ -3980,13 +3928,13 @@
 			<attribute name="native"/>
 			<referrer name="saveVehicle"/>
 			<referrer name="savePlayerData"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SetVehicleToRespawnEx"/>
 			<referrer name="GetXYInFrontOfPlayer"/>
 			<referrer name="cmd_vmove"/>
 			<referrer name="cmd_accept"/>
 			<referrer name="cmd_savevehicle"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="vehicleid">
 			</param>
 			<param name="z_angle">
@@ -4037,7 +3985,6 @@
 		</member>
 		<member name="M:GivePlayerWeapon" syntax="GivePlayerWeapon(playerid, weaponid, ammo)">
 			<attribute name="native"/>
-			<referrer name="cmd_startevent"/>
 			<referrer name="givePlayerValidWeapon"/>
 			<referrer name="givePlayerWeapons"/>
 			<param name="playerid">
@@ -4049,7 +3996,7 @@
 		</member>
 		<member name="M:GymMap" syntax="GymMap()">
 			<stacksize value="13"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="CreateDynamicObject"/>
 		</member>
 		<member name="M:IPBan" syntax="IPBan(ip[], reason[], name[])">
@@ -4083,8 +4030,8 @@
 		</member>
 		<member name="M:IsAPlane" syntax="IsAPlane(vehicleid)">
 			<stacksize value="3"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<dependency name="GetVehicleModel"/>
 			<param name="vehicleid">
 			</param>
@@ -4148,12 +4095,12 @@
 		</member>
 		<member name="M:IsPlayerInAnyVehicle" syntax="IsPlayerInAnyVehicle(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_explode"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="GetPlayerSpeed"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="GetPlayerSpeed"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_vgroup"/>
 			<referrer name="cmd_vcolour"/>
 			<referrer name="cmd_vrespawn"/>
@@ -4174,7 +4121,6 @@
 		</member>
 		<member name="M:IsPlayerInRangeOfPlayer" syntax="IsPlayerInRangeOfPlayer(playerid, playerid2, radius)">
 			<stacksize value="10"/>
-			<referrer name="cmd_givecar"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_confiscate"/>
 			<referrer name="cmd_detain"/>
@@ -4192,6 +4138,7 @@
 			<referrer name="cmd_accept"/>
 			<referrer name="cmd_whisper"/>
 			<referrer name="cmd_pay"/>
+			<referrer name="cmd_givecar"/>
 			<dependency name="GetPlayerPos"/>
 			<dependency name="IsPlayerInRangeOfPoint"/>
 			<param name="playerid">
@@ -4206,10 +4153,10 @@
 			<attribute name="native"/>
 			<referrer name="OnPlayerUpdate"/>
 			<referrer name="OnPlayerStateChange"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="PlayerPlaySoundEx"/>
 			<referrer name="IsPlayerInRangeOfVehicle"/>
 			<referrer name="IsPlayerInRangeOfPlayer"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="nearByMessage"/>
 			<referrer name="cmd_elevator"/>
 			<referrer name="cmd_gate"/>
@@ -4246,15 +4193,15 @@
 		<member name="M:IsPlayerInRangeOfVehicle" syntax="IsPlayerInRangeOfVehicle(playerid, vehicleid, radius)">
 			<stacksize value="10"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="cmd_abandoncar"/>
-			<referrer name="cmd_lockcar"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="cmd_detain"/>
 			<referrer name="cmd_vdeposit"/>
 			<referrer name="cmd_vwithdraw"/>
 			<referrer name="cmd_vbalance"/>
 			<referrer name="cmd_vstoreweapon"/>
 			<referrer name="cmd_vgetweapon"/>
+			<referrer name="cmd_abandoncar"/>
+			<referrer name="cmd_lockcar"/>
+			<referrer name="cmd_unmodcar"/>
 			<dependency name="GetVehiclePos"/>
 			<dependency name="IsPlayerInRangeOfPoint"/>
 			<param name="playerid">
@@ -4325,9 +4272,8 @@
 		</member>
 		<member name="M:IsValidSkin" syntax="IsValidSkin(skinid)">
 			<stacksize value="1"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="IsPublicSkin"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="IsPublicSkin"/>
 			<referrer name="cmd_set"/>
 			<referrer name="cmd_buyclothes"/>
 			<dependency name="false"/>
@@ -4472,26 +4418,26 @@
 		</member>
 		<member name="M:Kick" syntax="Kick(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_kick"/>
 			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="scriptBan"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="scriptBan"/>
+			<referrer name="cmd_kick"/>
 			<param name="playerid">
 			</param>
 		</member>
 		<member name="M:KillTimer" syntax="KillTimer(timerid)">
 			<attribute name="native"/>
-			<referrer name="restartTimer"/>
 			<referrer name="OnGameModeExit"/>
-			<referrer name="invalidNameChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="restartTimer"/>
+			<referrer name="invalidNameChange"/>
 			<param name="timerid">
 			</param>
 		</member>
 		<member name="M:LSMall" syntax="LSMall()">
 			<stacksize value="13"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="CreateDynamicObject"/>
 		</member>
 		<member name="M:LinkVehicleToInterior" syntax="LinkVehicleToInterior(vehicleid, interiorid)">
@@ -4507,8 +4453,8 @@
 		</member>
 		<member name="M:MoveDynamicObject" syntax="MoveDynamicObject(objectid, x, y, z, speed, rx, ry, rz)">
 			<attribute name="native"/>
-			<referrer name="ShutUp"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="ShutUp"/>
 			<referrer name="cmd_gate"/>
 			<param name="objectid">
 			</param>
@@ -4669,6 +4615,7 @@
 			<dependency name="pWarrants"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="random"/>
 			<dependency name="removePlayerWeapon"/>
 			<dependency name="saveAsset"/>
@@ -4724,6 +4671,7 @@
 			<dependency name="pMoney"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<param name="playerid">
 			</param>
 			<param name="enterexit">
@@ -4755,6 +4703,7 @@
 			<dependency name="KillTimer"/>
 			<dependency name="databaseConnection"/>
 			<dependency name="mysql_close"/>
+			<dependency name="print"/>
 			<dependency name="scriptTimers"/>
 		</member>
 		<member name="M:OnGameModeInit" syntax="OnGameModeInit()">
@@ -4814,6 +4763,7 @@
 			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="textdrawVariables"/>
 			<dependency name="true"/>
 			<param name="playerid">
@@ -4908,41 +4858,14 @@
 		</member>
 		<member name="M:OnPlayerDeath" syntax="OnPlayerDeath(playerid, killerid, reason)">
 			<attribute name="public"/>
-			<stacksize value="59"/>
-			<dependency name="GetPlayerName"/>
+			<stacksize value="6"/>
 			<dependency name="GetPlayerPos"/>
-			<dependency name="GetPlayerWeapon"/>
-			<dependency name="ResetPlayerWeapons"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="SendClientMessageToAll"/>
-			<dependency name="SendToEvent"/>
-			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetPlayerArmourEx"/>
-			<dependency name="SetPlayerHealthEx"/>
-			<dependency name="SetPlayerInterior"/>
-			<dependency name="SetPlayerPos"/>
-			<dependency name="SetPlayerSkin"/>
-			<dependency name="SetPlayerVirtualWorld"/>
-			<dependency name="WeaponNames"/>
-			<dependency name="WeaponNames"/>
-			<dependency name="eEventCount"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eventVariables"/>
-			<dependency name="format"/>
-			<dependency name="givePlayerWeapons"/>
 			<dependency name="pAdminDuty"/>
-			<dependency name="pArmour"/>
-			<dependency name="pEvent"/>
-			<dependency name="pHealth"/>
 			<dependency name="pHospitalized"/>
-			<dependency name="pInterior"/>
 			<dependency name="pPos"/>
-			<dependency name="pSkin"/>
-			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
-			<dependency name="szMessage"/>
+			<dependency name="printf"/>
 			<param name="playerid">
 			</param>
 			<param name="killerid">
@@ -5124,8 +5047,9 @@
 		</member>
 		<member name="M:OnPlayerExitVehicle" syntax="OnPlayerExitVehicle(playerid, vehicleid)">
 			<attribute name="public"/>
-			<stacksize value="4"/>
+			<stacksize value="5"/>
 			<dependency name="SetPlayerArmedWeapon"/>
+			<dependency name="printf"/>
 			<param name="playerid">
 			</param>
 			<param name="vehicleid">
@@ -5150,7 +5074,7 @@
 		</member>
 		<member name="M:OnPlayerInteriorChange" syntax="OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)">
 			<attribute name="public"/>
-			<stacksize value="4"/>
+			<stacksize value="6"/>
 			<dependency name="GetPlayerVirtualWorld"/>
 			<dependency name="SetPlayerVirtualWorld"/>
 			<dependency name="SetPlayerWeather"/>
@@ -5160,6 +5084,7 @@
 			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="weatherVariables"/>
 			<param name="playerid">
 			</param>
@@ -5390,6 +5315,7 @@
 			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="random"/>
 			<dependency name="syncPlayerTime"/>
 			<dependency name="true"/>
@@ -5475,6 +5401,7 @@
 			<dependency name="pStatus"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="strcmp"/>
 			<dependency name="strfind"/>
 			<dependency name="strlen"/>
@@ -5795,7 +5722,8 @@
 		</member>
 		<member name="M:OnVehicleDeath" syntax="OnVehicleDeath(vehicleid, killerid)">
 			<attribute name="public"/>
-			<stacksize value="1"/>
+			<stacksize value="5"/>
+			<dependency name="printf"/>
 			<param name="vehicleid">
 			</param>
 			<param name="killerid">
@@ -5814,6 +5742,7 @@
 			<dependency name="pMoney"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="submitToAdmins"/>
 			<dependency name="szMessage"/>
 			<dependency name="szPlayerName"/>
@@ -5826,7 +5755,7 @@
 		</member>
 		<member name="M:OnVehiclePaintjob" syntax="OnVehiclePaintjob(playerid, vehicleid, paintjobid)">
 			<attribute name="public"/>
-			<stacksize value="5"/>
+			<stacksize value="6"/>
 			<dependency name="GetPlayerVehicleID"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="YSI_gPlayerA"/>
@@ -5835,6 +5764,7 @@
 			<dependency name="pCarPaintjob"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<param name="playerid">
 			</param>
 			<param name="vehicleid">
@@ -5844,7 +5774,7 @@
 		</member>
 		<member name="M:OnVehicleRespray" syntax="OnVehicleRespray(playerid, vehicleid, color1, color2)">
 			<attribute name="public"/>
-			<stacksize value="5"/>
+			<stacksize value="7"/>
 			<dependency name="GetPlayerVehicleID"/>
 			<dependency name="SetPVarInt"/>
 			<dependency name="YSI_gPlayerA"/>
@@ -5853,6 +5783,7 @@
 			<dependency name="pCarID"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<param name="playerid">
 			</param>
 			<param name="vehicleid">
@@ -5867,6 +5798,7 @@
 			<stacksize value="4"/>
 			<dependency name="GetVehicleModel"/>
 			<dependency name="SetVehicleHealth"/>
+			<dependency name="printf"/>
 			<param name="vehicleid">
 			</param>
 		</member>
@@ -5879,6 +5811,7 @@
 			<dependency name="pCarID"/>
 			<dependency name="pCarLock"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<param name="vehicleid">
 			</param>
 			<param name="forplayerid">
@@ -5904,9 +5837,9 @@
 		</member>
 		<member name="M:PlayerPlaySound" syntax="PlayerPlaySound(playerid, soundid, x, y, z)">
 			<attribute name="native"/>
-			<referrer name="PlayerPlaySoundEx"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="PlayerPlaySoundEx"/>
 			<referrer name="cmd_uncuff"/>
 			<referrer name="cmd_ooc"/>
 			<referrer name="cmd_pay"/>
@@ -5927,7 +5860,6 @@
 		<member name="M:PlayerPlaySoundEx" syntax="PlayerPlaySoundEx(soundid, x, y, z)">
 			<stacksize value="8"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="cmd_lockcar"/>
 			<referrer name="cmd_gate"/>
 			<referrer name="cmd_cuff"/>
 			<referrer name="cmd_fixcar"/>
@@ -5936,6 +5868,7 @@
 			<referrer name="cmd_hydcar"/>
 			<referrer name="cmd_lockhouse"/>
 			<referrer name="cmd_slap"/>
+			<referrer name="cmd_lockcar"/>
 			<dependency name="IsPlayerInRangeOfPoint"/>
 			<dependency name="PlayerPlaySound"/>
 			<dependency name="YSI_gPlayerA"/>
@@ -5954,8 +5887,8 @@
 		</member>
 		<member name="M:PlayerSpectatePlayer" syntax="PlayerSpectatePlayer(playerid, targetplayerid, mode)">
 			<attribute name="native"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnPlayerClickPlayer"/>
 			<referrer name="cmd_spec"/>
 			<param name="playerid">
@@ -5967,8 +5900,8 @@
 		</member>
 		<member name="M:PlayerSpectateVehicle" syntax="PlayerSpectateVehicle(playerid, targetvehicleid, mode)">
 			<attribute name="native"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnPlayerClickPlayer"/>
 			<referrer name="cmd_spec"/>
 			<param name="playerid">
@@ -6020,11 +5953,11 @@
 		<member name="M:PutPlayerInVehicle" syntax="PutPlayerInVehicle(playerid, vehicleid, seatid)">
 			<attribute name="native"/>
 			<referrer name="cmd_closestcar"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="cmd_vmodel"/>
 			<referrer name="cmd_vmove"/>
 			<referrer name="cmd_detain"/>
 			<referrer name="cmd_veh"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="playerid">
 			</param>
 			<param name="vehicleid">
@@ -6132,6 +6065,7 @@
 			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="textdrawVariables"/>
 			<param name="playerid">
 			</param>
@@ -6174,6 +6108,7 @@
 			<dependency name="pSpectating"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="szMessage"/>
 			<dependency name="szPlayerName"/>
 			<dependency name="vVehicleGroup"/>
@@ -6283,15 +6218,10 @@
 		</member>
 		<member name="M:ResetPlayerWeapons" syntax="ResetPlayerWeapons(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="removePlayerWeapon"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="removePlayerWeapon"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="validResetPlayerWeapons"/>
 			<param name="playerid">
 			</param>
@@ -6329,54 +6259,12 @@
 		</member>
 		<member name="M:SSCANF_OnGameModeInit" syntax="SSCANF_OnGameModeInit()">
 			<attribute name="public"/>
-			<stacksize value="15"/>
-			<dependency name="Float:operator=(_:)"/>
-			<dependency name="AntiDeAMX"/>
-			<dependency name="CreateDynamic3DTextLabel"/>
-			<dependency name="CreateDynamicObject"/>
-			<dependency name="CreateDynamicPickup"/>
-			<dependency name="DisableInteriorEnterExits"/>
-			<dependency name="EnableStuntBonusForAll"/>
-			<dependency name="GetServerVarAsString"/>
-			<dependency name="GymMap"/>
-			<dependency name="LSMall"/>
-			<dependency name="LSPDGates"/>
-			<dependency name="LSPDGates"/>
-			<dependency name="LSPDObjs"/>
-			<dependency name="LSPDObjs"/>
-			<dependency name="SetGameModeText"/>
-			<dependency name="SetTimer"/>
-			<dependency name="SetWeather"/>
-			<dependency name="ShowPlayerMarkers"/>
-			<dependency name="TextDrawAlignment"/>
-			<dependency name="TextDrawBackgroundColor"/>
-			<dependency name="TextDrawColor"/>
-			<dependency name="TextDrawCreate"/>
-			<dependency name="TextDrawFont"/>
-			<dependency name="TextDrawLetterSize"/>
-			<dependency name="TextDrawSetOutline"/>
-			<dependency name="TextDrawSetProportional"/>
-			<dependency name="TextDrawSetShadow"/>
-			<dependency name="TextDrawUseBox"/>
-			<dependency name="UsePlayerPedAnims"/>
-			<dependency name="initiateAssets"/>
-			<dependency name="initiateBusinesses"/>
-			<dependency name="initiateConnections"/>
-			<dependency name="initiateGroups"/>
-			<dependency name="initiateHouseSpawns"/>
-			<dependency name="initiateJobs"/>
-			<dependency name="initiateVehicleSpawns"/>
-			<dependency name="loadATMs"/>
-			<dependency name="mysql_query"/>
+			<stacksize value="6"/>
+			<dependency name="Shits"/>
+			<dependency name="mysql_debug"/>
 			<dependency name="print"/>
-			<dependency name="random"/>
-			<dependency name="scriptTimers"/>
 			<dependency name="strfind"/>
-			<dependency name="szServerWebsite"/>
-			<dependency name="textdrawVariables"/>
 			<dependency name="true"/>
-			<dependency name="validWeatherIDs"/>
-			<dependency name="weatherVariables"/>
 		</member>
 		<member name="M:SSCANF_OnPlayerConnect" syntax="SSCANF_OnPlayerConnect(playerid)">
 			<attribute name="public"/>
@@ -6394,6 +6282,7 @@
 			<dependency name="pConnectionIP"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="resetPlayerVariables"/>
 			<dependency name="syncPlayerTime"/>
 			<dependency name="szMessage"/>
@@ -6403,65 +6292,47 @@
 		</member>
 		<member name="M:SSCANF_OnPlayerDisconnect" syntax="SSCANF_OnPlayerDisconnect(playerid, reason)">
 			<attribute name="public"/>
-			<stacksize value="8"/>
+			<stacksize value="7"/>
 			<dependency name="DestroyVehicle"/>
-			<dependency name="GetPlayerName"/>
 			<dependency name="GetPlayerSpecialAction"/>
-			<dependency name="ResetPlayerWeapons"/>
 			<dependency name="SendClientMessage"/>
-			<dependency name="SendClientMessageToAll"/>
-			<dependency name="SendToEvent"/>
 			<dependency name="SendToGroup"/>
 			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetPlayerArmourEx"/>
-			<dependency name="SetPlayerHealthEx"/>
 			<dependency name="SetPlayerInterior"/>
 			<dependency name="SetPlayerName"/>
 			<dependency name="SetPlayerPos"/>
-			<dependency name="SetPlayerSkin"/>
 			<dependency name="SetPlayerSpecialAction"/>
 			<dependency name="SetPlayerVirtualWorld"/>
 			<dependency name="TextDrawHideForPlayer"/>
-			<dependency name="TogglePlayerControllable"/>
 			<dependency name="TogglePlayerSpectating"/>
 			<dependency name="YSI_gPlayerA"/>
 			<dependency name="YSI_gPlayerS"/>
-			<dependency name="eEventCount"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eventVariables"/>
 			<dependency name="false"/>
 			<dependency name="format"/>
-			<dependency name="givePlayerWeapons"/>
 			<dependency name="nearByMessage"/>
 			<dependency name="pAdminDuty"/>
 			<dependency name="pAdminLevel"/>
-			<dependency name="pArmour"/>
 			<dependency name="pCarID"/>
 			<dependency name="pCarModel"/>
 			<dependency name="pDrag"/>
-			<dependency name="pEvent"/>
 			<dependency name="pFreezeType"/>
 			<dependency name="pGroup"/>
-			<dependency name="pHealth"/>
 			<dependency name="pInterior"/>
 			<dependency name="pNormalName"/>
 			<dependency name="pPhoneCall"/>
 			<dependency name="pPos"/>
 			<dependency name="pPrisonID"/>
 			<dependency name="pPrisonTime"/>
-			<dependency name="pSkin"/>
 			<dependency name="pSpectating"/>
 			<dependency name="pStatus"/>
 			<dependency name="pVirtualWorld"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="savePlayerData"/>
 			<dependency name="systemVariables"/>
 			<dependency name="szMessage"/>
-			<dependency name="szPlayerName"/>
 			<dependency name="textdrawVariables"/>
-			<dependency name="true"/>
 			<dependency name="vehicleCounts"/>
 			<param name="playerid">
 			</param>
@@ -6470,6 +6341,32 @@
 		</member>
 		<member name="M:SendClientMessage" syntax="SendClientMessage(playerid, color, message[])">
 			<attribute name="native"/>
+			<referrer name="OnPlayerCommandReceived"/>
+			<referrer name="SSCANF_OnPlayerConnect"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="AFKTimer"/>
+			<referrer name="SendToGroup"/>
+			<referrer name="SendToFrequency"/>
+			<referrer name="sendDepartmentMessage"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="showStats"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="suspensionCheck"/>
+			<referrer name="submitToAdmins"/>
+			<referrer name="RL_OnPlayerStateChange"/>
+			<referrer name="clearScreen"/>
+			<referrer name="initiateHospital"/>
+			<referrer name="businessTypeMessages"/>
+			<referrer name="PurchaseVehicleFromDealer"/>
+			<referrer name="nearByMessage"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_setweather"/>
 			<referrer name="cmd_forcelogout"/>
@@ -6511,44 +6408,6 @@
 			<referrer name="cmd_bar"/>
 			<referrer name="cmd_dance"/>
 			<referrer name="cmd_stopanim"/>
-			<referrer name="SendToEvent"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="AFKTimer"/>
-			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="SendToGroup"/>
-			<referrer name="SendToFrequency"/>
-			<referrer name="sendDepartmentMessage"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="showStats"/>
-			<referrer name="invalidNameChange"/>
-			<referrer name="suspensionCheck"/>
-			<referrer name="submitToAdmins"/>
-			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="clearScreen"/>
-			<referrer name="initiateHospital"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
-			<referrer name="businessTypeMessages"/>
-			<referrer name="cmd_abandoncar"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="cmd_lockcar"/>
-			<referrer name="cmd_findcar"/>
-			<referrer name="cmd_unmodcar"/>
-			<referrer name="PurchaseVehicleFromDealer"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="nearByMessage"/>
-			<referrer name="OnPlayerText"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_time"/>
 			<referrer name="cmd_cancelbackup"/>
@@ -6732,6 +6591,11 @@
 			<referrer name="cmd_pickup"/>
 			<referrer name="cmd_togphone"/>
 			<referrer name="cmd_hangup"/>
+			<referrer name="cmd_abandoncar"/>
+			<referrer name="cmd_givecar"/>
+			<referrer name="cmd_lockcar"/>
+			<referrer name="cmd_findcar"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="playerid">
 			</param>
 			<param name="color">
@@ -6742,15 +6606,11 @@
 		</member>
 		<member name="M:SendClientMessageToAll" syntax="SendClientMessageToAll(color, message[])">
 			<attribute name="native"/>
+			<referrer name="restartTimer"/>
+			<referrer name="scriptBan"/>
 			<referrer name="cmd_ban"/>
 			<referrer name="cmd_kick"/>
 			<referrer name="cmd_fine"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="restartTimer"/>
-			<referrer name="scriptBan"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="cmd_gov"/>
 			<referrer name="cmd_ad"/>
 			<referrer name="cmd_reports"/>
@@ -6770,22 +6630,6 @@
 			<attribute name="native"/>
 			<referrer name="restartTimer"/>
 			<param name="command">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
-		<member name="M:SendToEvent" syntax="SendToEvent(colour, string[])">
-			<stacksize value="6"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="YSI_gPlayerA"/>
-			<dependency name="YSI_gPlayerS"/>
-			<dependency name="pEvent"/>
-			<dependency name="playerVariables"/>
-			<param name="colour">
-			</param>
-			<param name="string">
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
@@ -6809,10 +6653,10 @@
 		<member name="M:SendToGroup" syntax="SendToGroup(groupid, colour, string[])">
 			<stacksize value="6"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="SendToGroupType"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerText"/>
+			<referrer name="SendToGroupType"/>
 			<referrer name="cmd_backup"/>
 			<referrer name="cmd_group"/>
 			<referrer name="cmd_radio"/>
@@ -6886,10 +6730,7 @@
 		</member>
 		<member name="M:SetCameraBehindPlayer" syntax="SetCameraBehindPlayer(playerid)">
 			<attribute name="native"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<param name="playerid">
@@ -6912,7 +6753,7 @@
 		</member>
 		<member name="M:SetGameModeText" syntax="SetGameModeText(string[])">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="string">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -6934,15 +6775,14 @@
 		<member name="M:SetPVarInt" syntax="SetPVarInt(playerid, varname[], int_value)">
 			<attribute name="native"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="invalidNameChange"/>
 			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="forceAdminConfirmPIN"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnVehicleRespray"/>
 			<referrer name="OnVehiclePaintjob"/>
-			<referrer name="cmd_givecar"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="forceAdminConfirmPIN"/>
+			<referrer name="initiateHospital"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_backup"/>
@@ -6955,6 +6795,7 @@
 			<referrer name="cmd_savevehicle"/>
 			<referrer name="cmd_createhouse"/>
 			<referrer name="cmd_reports"/>
+			<referrer name="cmd_givecar"/>
 			<param name="playerid">
 			</param>
 			<param name="varname">
@@ -6965,10 +6806,10 @@
 		</member>
 		<member name="M:SetPVarString" syntax="SetPVarString(playerid, varname[], string_value[])">
 			<attribute name="native"/>
-			<referrer name="cmd_unban"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="forceAdminConfirmPIN"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="forceAdminConfirmPIN"/>
+			<referrer name="cmd_unban"/>
 			<referrer name="cmd_suspendbank"/>
 			<referrer name="cmd_helpme"/>
 			<param name="playerid">
@@ -6999,12 +6840,7 @@
 		</member>
 		<member name="M:SetPlayerArmourEx" syntax="SetPlayerArmourEx(playerid, armour)">
 			<stacksize value="4"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_adminduty"/>
@@ -7077,7 +6913,6 @@
 		</member>
 		<member name="M:SetPlayerCheckpoint" syntax="SetPlayerCheckpoint(playerid, x, y, z, size)">
 			<attribute name="native"/>
-			<referrer name="cmd_findcar"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_trackhouse"/>
 			<referrer name="cmd_business"/>
@@ -7087,6 +6922,7 @@
 			<referrer name="cmd_track"/>
 			<referrer name="cmd_getmats"/>
 			<referrer name="cmd_dropcar"/>
+			<referrer name="cmd_findcar"/>
 			<param name="playerid">
 			</param>
 			<param name="x">
@@ -7122,9 +6958,9 @@
 		</member>
 		<member name="M:SetPlayerFacingAngle" syntax="SetPlayerFacingAngle(playerid, ang)">
 			<attribute name="native"/>
-			<referrer name="initiateTutorial"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="initiateTutorial"/>
 			<referrer name="PlayerFacePlayer"/>
 			<referrer name="cmd_arrest"/>
 			<param name="playerid">
@@ -7153,15 +6989,10 @@
 		</member>
 		<member name="M:SetPlayerHealthEx" syntax="SetPlayerHealthEx(playerid, health)">
 			<stacksize value="4"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="VendDrink"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateHospital"/>
+			<referrer name="VendDrink"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_kill"/>
 			<referrer name="cmd_adminduty"/>
@@ -7179,16 +7010,12 @@
 		</member>
 		<member name="M:SetPlayerInterior" syntax="SetPlayerInterior(playerid, interiorid)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateHospital"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_set"/>
@@ -7236,9 +7063,9 @@
 		<member name="M:SetPlayerName" syntax="SetPlayerName(playerid, name[])">
 			<attribute name="native"/>
 			<referrer name="OnQueryFinish"/>
-			<referrer name="invalidNameChange"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="invalidNameChange"/>
 			<referrer name="cmd_setadminname"/>
 			<referrer name="cmd_adminduty"/>
 			<referrer name="cmd_changename"/>
@@ -7250,17 +7077,13 @@
 		</member>
 		<member name="M:SetPlayerPos" syntax="SetPlayerPos(playerid, x, y, z)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="initiateTutorial"/>
 			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="initiateHospital"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_accept"/>
@@ -7309,13 +7132,8 @@
 		</member>
 		<member name="M:SetPlayerSkin" syntax="SetPlayerSkin(playerid, skinid)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_set"/>
@@ -7328,14 +7146,14 @@
 		</member>
 		<member name="M:SetPlayerSpecialAction" syntax="SetPlayerSpecialAction(playerid, actionid)">
 			<attribute name="native"/>
-			<referrer name="cmd_piss"/>
-			<referrer name="cmd_handsup"/>
-			<referrer name="cmd_smoke"/>
-			<referrer name="cmd_dance"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerText"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_piss"/>
+			<referrer name="cmd_handsup"/>
+			<referrer name="cmd_smoke"/>
+			<referrer name="cmd_dance"/>
 			<referrer name="cmd_spawnweapon"/>
 			<referrer name="cmd_call"/>
 			<referrer name="cmd_pickup"/>
@@ -7372,17 +7190,13 @@
 		</member>
 		<member name="M:SetPlayerVirtualWorld" syntax="SetPlayerVirtualWorld(playerid, worldid)">
 			<attribute name="native"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
 			<referrer name="OnPlayerInteriorChange"/>
 			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateHospital"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_set"/>
@@ -7412,12 +7226,12 @@
 		</member>
 		<member name="M:SetPlayerWeather" syntax="SetPlayerWeather(playerid, weather)">
 			<attribute name="native"/>
-			<referrer name="cmd_setweather"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
 			<referrer name="OnPlayerInteriorChange"/>
 			<referrer name="OnPlayerSpawn"/>
 			<referrer name="syncPlayerTime"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_setweather"/>
 			<param name="playerid">
 			</param>
 			<param name="weather">
@@ -7425,9 +7239,9 @@
 		</member>
 		<member name="M:SetSpawnInfo" syntax="SetSpawnInfo(playerid, team, skin, x, y, z, rotation, weapon1, weapon1_ammo, weapon2, weapon2_ammo, weapon3, weapon3_ammo)">
 			<attribute name="native"/>
+			<referrer name="OnQueryFinish"/>
 			<referrer name="firstPlayerSpawn"/>
 			<referrer name="initiateTutorial"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="globalPlayerLoop"/>
 			<param name="playerid">
 			</param>
@@ -7462,8 +7276,8 @@
 		</member>
 		<member name="M:SetTimer" syntax="SetTimer(funcname[], interval, repeating)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="Shits"/>
 			<param name="funcname">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -7475,9 +7289,9 @@
 		<member name="M:SetTimerEx" syntax="SetTimerEx(funcname[], interval, repeating, format[], ...)">
 			<attribute name="native"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="invalidNameChange"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="invalidNameChange"/>
 			<param name="funcname">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -7497,8 +7311,8 @@
 			<referrer name="OnVehicleSpawn"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="cmd_veh"/>
+			<referrer name="cmd_unmodcar"/>
 			<param name="vehicleid">
 			</param>
 			<param name="health">
@@ -7616,7 +7430,7 @@
 		</member>
 		<member name="M:SetWeather" syntax="SetWeather(weatherid)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="weatherid">
 			</param>
 		</member>
@@ -7626,22 +7440,71 @@
 			<param name="hour">
 			</param>
 		</member>
+		<member name="M:Shits" syntax="Shits()">
+			<attribute name="public"/>
+			<stacksize value="15"/>
+			<referrer name="SSCANF_OnGameModeInit"/>
+			<dependency name="Float:operator=(_:)"/>
+			<dependency name="CreateDynamic3DTextLabel"/>
+			<dependency name="CreateDynamicObject"/>
+			<dependency name="CreateDynamicPickup"/>
+			<dependency name="DisableInteriorEnterExits"/>
+			<dependency name="EnableStuntBonusForAll"/>
+			<dependency name="GetServerVarAsString"/>
+			<dependency name="GymMap"/>
+			<dependency name="LSMall"/>
+			<dependency name="LSPDGates"/>
+			<dependency name="LSPDGates"/>
+			<dependency name="LSPDObjs"/>
+			<dependency name="LSPDObjs"/>
+			<dependency name="SetGameModeText"/>
+			<dependency name="SetTimer"/>
+			<dependency name="SetWeather"/>
+			<dependency name="ShowPlayerMarkers"/>
+			<dependency name="TextDrawAlignment"/>
+			<dependency name="TextDrawBackgroundColor"/>
+			<dependency name="TextDrawColor"/>
+			<dependency name="TextDrawCreate"/>
+			<dependency name="TextDrawFont"/>
+			<dependency name="TextDrawLetterSize"/>
+			<dependency name="TextDrawSetOutline"/>
+			<dependency name="TextDrawSetProportional"/>
+			<dependency name="TextDrawSetShadow"/>
+			<dependency name="TextDrawUseBox"/>
+			<dependency name="UsePlayerPedAnims"/>
+			<dependency name="initiateAssets"/>
+			<dependency name="initiateBusinesses"/>
+			<dependency name="initiateConnections"/>
+			<dependency name="initiateGroups"/>
+			<dependency name="initiateHouseSpawns"/>
+			<dependency name="initiateJobs"/>
+			<dependency name="initiateVehicleSpawns"/>
+			<dependency name="loadATMs"/>
+			<dependency name="mysql_query"/>
+			<dependency name="random"/>
+			<dependency name="scriptTimers"/>
+			<dependency name="szServerWebsite"/>
+			<dependency name="textdrawVariables"/>
+			<dependency name="true"/>
+			<dependency name="validWeatherIDs"/>
+			<dependency name="weatherVariables"/>
+		</member>
 		<member name="M:ShowPlayerDialog" syntax="ShowPlayerDialog(playerid, dialogid, style, caption[], info[], button1[], button2[])">
 			<attribute name="native"/>
-			<referrer name="cmd_forcelogout"/>
-			<referrer name="cmd_gmx"/>
+			<referrer name="OnQueryError"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="genderSelection"/>
 			<referrer name="AFKTimer"/>
 			<referrer name="loginCheck"/>
 			<referrer name="initiateTutorial"/>
-			<referrer name="OnQueryError"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="invalidNameChange"/>
 			<referrer name="forceAdminConfirmPIN"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="businessTypeMessages"/>
 			<referrer name="PurchaseVehicleFromDealer"/>
-			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_forcelogout"/>
+			<referrer name="cmd_gmx"/>
 			<referrer name="cmd_elevator"/>
 			<referrer name="cmd_go"/>
 			<referrer name="cmd_lspd"/>
@@ -7675,7 +7538,7 @@
 		</member>
 		<member name="M:ShowPlayerMarkers" syntax="ShowPlayerMarkers(mode)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="mode">
 			</param>
 		</member>
@@ -7690,9 +7553,9 @@
 		</member>
 		<member name="M:SpawnPlayer" syntax="SpawnPlayer(playerid)">
 			<attribute name="native"/>
+			<referrer name="OnQueryFinish"/>
 			<referrer name="firstPlayerSpawn"/>
 			<referrer name="initiateTutorial"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="globalPlayerLoop"/>
 			<param name="playerid">
 			</param>
@@ -7701,10 +7564,10 @@
 			<stacksize value="10"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="cmd_unmodcar"/>
 			<referrer name="PurchaseVehicleFromDealer"/>
 			<referrer name="cmd_setplayervehicle"/>
 			<referrer name="cmd_accept"/>
+			<referrer name="cmd_unmodcar"/>
 			<dependency name="AddVehicleComponent"/>
 			<dependency name="ChangeVehiclePaintjob"/>
 			<dependency name="CreateVehicle"/>
@@ -7843,6 +7706,7 @@
 			<dependency name="pMoney"/>
 			<dependency name="playerVariables"/>
 			<dependency name="playerVariables"/>
+			<dependency name="printf"/>
 			<dependency name="random"/>
 			<dependency name="submitToAdmins"/>
 			<dependency name="szMessage"/>
@@ -7894,7 +7758,7 @@
 		</member>
 		<member name="M:TextDrawAlignment" syntax="TextDrawAlignment(text, alignment)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7903,7 +7767,7 @@
 		</member>
 		<member name="M:TextDrawBackgroundColor" syntax="TextDrawBackgroundColor(text, color)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7912,7 +7776,7 @@
 		</member>
 		<member name="M:TextDrawColor" syntax="TextDrawColor(text, color)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7922,7 +7786,7 @@
 		<member name="M:TextDrawCreate" syntax="TextDrawCreate(x, y, text[])">
 			<tagname value="Text"/>
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="x">
 				<paraminfo>Float </paraminfo>
 			</param>
@@ -7935,7 +7799,7 @@
 		</member>
 		<member name="M:TextDrawFont" syntax="TextDrawFont(text, font)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7944,12 +7808,12 @@
 		</member>
 		<member name="M:TextDrawHideForPlayer" syntax="TextDrawHideForPlayer(playerid, text)">
 			<attribute name="native"/>
-			<referrer name="cmd_stopanim"/>
-			<referrer name="firstPlayerSpawn"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="firstPlayerSpawn"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_stopanim"/>
 			<param name="playerid">
 			</param>
 			<param name="text">
@@ -7958,7 +7822,7 @@
 		</member>
 		<member name="M:TextDrawLetterSize" syntax="TextDrawLetterSize(text, x, y)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7971,7 +7835,7 @@
 		</member>
 		<member name="M:TextDrawSetOutline" syntax="TextDrawSetOutline(text, size)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7980,7 +7844,7 @@
 		</member>
 		<member name="M:TextDrawSetProportional" syntax="TextDrawSetProportional(text, set)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7989,7 +7853,7 @@
 		</member>
 		<member name="M:TextDrawSetShadow" syntax="TextDrawSetShadow(text, size)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -7998,6 +7862,10 @@
 		</member>
 		<member name="M:TextDrawShowForPlayer" syntax="TextDrawShowForPlayer(playerid, text)">
 			<attribute name="native"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_piss"/>
 			<referrer name="cmd_handsup"/>
 			<referrer name="cmd_drunk"/>
@@ -8020,10 +7888,6 @@
 			<referrer name="cmd_sit"/>
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_dance"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_accepthelp"/>
 			<referrer name="OnPlayerClickPlayer"/>
 			<referrer name="cmd_spec"/>
@@ -8035,7 +7899,7 @@
 		</member>
 		<member name="M:TextDrawUseBox" syntax="TextDrawUseBox(text, use)">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<param name="text">
 				<paraminfo>Text </paraminfo>
 			</param>
@@ -8044,18 +7908,13 @@
 		</member>
 		<member name="M:TogglePlayerControllable" syntax="TogglePlayerControllable(playerid, toggle)">
 			<attribute name="native"/>
-			<referrer name="cmd_stopanim"/>
-			<referrer name="cmd_joinevent"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="initiateTutorial"/>
 			<referrer name="initiateHospital"/>
-			<referrer name="OnPlayerSpawn"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="RL_OnPlayerKeyStateChange"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_stopanim"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_cuff"/>
 			<referrer name="cmd_freeze"/>
@@ -8116,7 +7975,7 @@
 		</member>
 		<member name="M:UsePlayerPedAnims" syntax="UsePlayerPedAnims()">
 			<attribute name="native"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 		</member>
 		<member name="M:VendDrink" syntax="VendDrink(playerid)">
 			<attribute name="public"/>
@@ -8144,11 +8003,11 @@
 		</member>
 		<member name="M:adminLog" syntax="adminLog(string[])">
 			<stacksize value="337"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="scriptBan"/>
 			<referrer name="cmd_ban"/>
 			<referrer name="cmd_kick"/>
 			<referrer name="cmd_fine"/>
-			<referrer name="scriptBan"/>
-			<referrer name="OnQueryFinish"/>
 			<dependency name="GetTickCount"/>
 			<dependency name="format"/>
 			<dependency name="mysql_query"/>
@@ -8166,9 +8025,6 @@
 			<dependency name="GetWeaponSlot"/>
 			<dependency name="YSI_gPlayerA"/>
 			<dependency name="YSI_gPlayerS"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eEventWeapons"/>
-			<dependency name="eventVariables"/>
 			<dependency name="hackerTrigger"/>
 			<dependency name="pAdminLevel"/>
 			<dependency name="pAnticheatExemption"/>
@@ -9930,72 +9786,6 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
-		<member name="M:cmd_endevent" syntax="cmd_endevent(playerid, params[])">
-			<attribute name="public"/>
-			<stacksize value="135"/>
-			<dependency name="ResetPlayerWeapons"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="SendClientMessageToAll"/>
-			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetPlayerArmourEx"/>
-			<dependency name="SetPlayerHealthEx"/>
-			<dependency name="SetPlayerInterior"/>
-			<dependency name="SetPlayerPos"/>
-			<dependency name="SetPlayerSkin"/>
-			<dependency name="SetPlayerVirtualWorld"/>
-			<dependency name="TogglePlayerControllable"/>
-			<dependency name="YSI_gPlayerA"/>
-			<dependency name="YSI_gPlayerS"/>
-			<dependency name="eEventCount"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eventVariables"/>
-			<dependency name="format"/>
-			<dependency name="givePlayerWeapons"/>
-			<dependency name="pAdminDuty"/>
-			<dependency name="pAdminLevel"/>
-			<dependency name="pAdminName"/>
-			<dependency name="pArmour"/>
-			<dependency name="pEvent"/>
-			<dependency name="pHealth"/>
-			<dependency name="pInterior"/>
-			<dependency name="pPos"/>
-			<dependency name="pSkin"/>
-			<dependency name="pVirtualWorld"/>
-			<dependency name="playerVariables"/>
-			<dependency name="playerVariables"/>
-			<dependency name="true"/>
-			<param name="playerid">
-			</param>
-			<param name="params">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
-		<member name="M:cmd_eventproperties" syntax="cmd_eventproperties(playerid, params[])">
-			<attribute name="public"/>
-			<stacksize value="20"/>
-			<dependency name="Float:operator=(_:)"/>
-			<dependency name="GetPlayerInterior"/>
-			<dependency name="GetPlayerPos"/>
-			<dependency name="GetPlayerVirtualWorld"/>
-			<dependency name="IsValidSkin"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="eArmourHP"/>
-			<dependency name="eEventInt"/>
-			<dependency name="eEventPos"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventVW"/>
-			<dependency name="eEventWeapons"/>
-			<dependency name="eventVariables"/>
-			<dependency name="pAdminLevel"/>
-			<dependency name="playerVariables"/>
-			<dependency name="sscanf"/>
-			<param name="playerid">
-			</param>
-			<param name="params">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
 		<member name="M:cmd_explode" syntax="cmd_explode(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="56"/>
@@ -11304,54 +11094,6 @@
 				<paraminfo> [] </paraminfo>
 			</param>
 		</member>
-		<member name="M:cmd_joinevent" syntax="cmd_joinevent(playerid, params[])">
-			<attribute name="public"/>
-			<stacksize value="6"/>
-			<dependency name="GetPlayerArmour"/>
-			<dependency name="GetPlayerHealth"/>
-			<dependency name="GetPlayerInterior"/>
-			<dependency name="GetPlayerPos"/>
-			<dependency name="GetPlayerState"/>
-			<dependency name="GetPlayerVirtualWorld"/>
-			<dependency name="ResetPlayerWeapons"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="SetPlayerArmourEx"/>
-			<dependency name="SetPlayerHealthEx"/>
-			<dependency name="SetPlayerInterior"/>
-			<dependency name="SetPlayerPos"/>
-			<dependency name="SetPlayerSkin"/>
-			<dependency name="SetPlayerVirtualWorld"/>
-			<dependency name="TogglePlayerControllable"/>
-			<dependency name="YSI_gPlayerA"/>
-			<dependency name="YSI_gPlayerS"/>
-			<dependency name="eArmourHP"/>
-			<dependency name="eEventCount"/>
-			<dependency name="eEventInt"/>
-			<dependency name="eEventPos"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eEventVW"/>
-			<dependency name="eventVariables"/>
-			<dependency name="false"/>
-			<dependency name="pAdminDuty"/>
-			<dependency name="pArmour"/>
-			<dependency name="pDrag"/>
-			<dependency name="pEvent"/>
-			<dependency name="pFreezeType"/>
-			<dependency name="pHealth"/>
-			<dependency name="pInterior"/>
-			<dependency name="pPos"/>
-			<dependency name="pPrisonID"/>
-			<dependency name="pSpectating"/>
-			<dependency name="pVirtualWorld"/>
-			<dependency name="playerVariables"/>
-			<dependency name="playerVariables"/>
-			<param name="playerid">
-			</param>
-			<param name="params">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
 		<member name="M:cmd_kick" syntax="cmd_kick(playerid, params[])">
 			<attribute name="public"/>
 			<stacksize value="221"/>
@@ -12173,43 +11915,6 @@
 			<dependency name="sscanf"/>
 			<dependency name="szMessage"/>
 			<dependency name="szPlayerName"/>
-			<param name="playerid">
-			</param>
-			<param name="params">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
-		<member name="M:cmd_quitevent" syntax="cmd_quitevent(playerid, params[])">
-			<attribute name="public"/>
-			<stacksize value="135"/>
-			<dependency name="ResetPlayerWeapons"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="SendToEvent"/>
-			<dependency name="SetCameraBehindPlayer"/>
-			<dependency name="SetPlayerArmourEx"/>
-			<dependency name="SetPlayerHealthEx"/>
-			<dependency name="SetPlayerInterior"/>
-			<dependency name="SetPlayerPos"/>
-			<dependency name="SetPlayerSkin"/>
-			<dependency name="SetPlayerVirtualWorld"/>
-			<dependency name="TogglePlayerControllable"/>
-			<dependency name="eEventCount"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eventVariables"/>
-			<dependency name="format"/>
-			<dependency name="givePlayerWeapons"/>
-			<dependency name="pAdminDuty"/>
-			<dependency name="pArmour"/>
-			<dependency name="pEvent"/>
-			<dependency name="pHealth"/>
-			<dependency name="pInterior"/>
-			<dependency name="pNormalName"/>
-			<dependency name="pPos"/>
-			<dependency name="pSkin"/>
-			<dependency name="pVirtualWorld"/>
-			<dependency name="playerVariables"/>
-			<dependency name="playerVariables"/>
-			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -13138,33 +12843,6 @@
 			<dependency name="sPos"/>
 			<dependency name="spikeVariables"/>
 			<dependency name="spikeVariables"/>
-			<param name="playerid">
-			</param>
-			<param name="params">
-				<paraminfo> [] </paraminfo>
-			</param>
-		</member>
-		<member name="M:cmd_startevent" syntax="cmd_startevent(playerid, params[])">
-			<attribute name="public"/>
-			<stacksize value="100"/>
-			<dependency name="GivePlayerWeapon"/>
-			<dependency name="SendClientMessage"/>
-			<dependency name="SendClientMessageToAll"/>
-			<dependency name="TogglePlayerControllable"/>
-			<dependency name="YSI_gPlayerA"/>
-			<dependency name="YSI_gPlayerS"/>
-			<dependency name="eEventSkin"/>
-			<dependency name="eEventStat"/>
-			<dependency name="eEventWeapons"/>
-			<dependency name="eventVariables"/>
-			<dependency name="format"/>
-			<dependency name="pAdminLevel"/>
-			<dependency name="pAdminName"/>
-			<dependency name="pEvent"/>
-			<dependency name="pStatus"/>
-			<dependency name="playerVariables"/>
-			<dependency name="playerVariables"/>
-			<dependency name="true"/>
 			<param name="playerid">
 			</param>
 			<param name="params">
@@ -14385,14 +14063,14 @@
 		</member>
 		<member name="M:doesVehicleExist" syntax="doesVehicleExist(vehicleid)">
 			<stacksize value="3"/>
-			<referrer name="cmd_closestcar"/>
 			<referrer name="GetClosestVehicle"/>
 			<referrer name="savePlayerData"/>
-			<referrer name="cmd_lockcar"/>
 			<referrer name="DestroyPlayerVehicle"/>
 			<referrer name="SetAllVehiclesToRespawn"/>
 			<referrer name="SpawnPlayerVehicle"/>
+			<referrer name="cmd_closestcar"/>
 			<referrer name="cmd_getvehicle"/>
+			<referrer name="cmd_lockcar"/>
 			<dependency name="GetVehicleModel"/>
 			<param name="vehicleid">
 			</param>
@@ -14696,6 +14374,38 @@
 			<referrer name="GetPlayer3DZone"/>
 			<referrer name="Get3DZone"/>
 			<referrer name="Get2DPosZone"/>
+			<referrer name="OnPlayerCommandReceived"/>
+			<referrer name="SSCANF_OnPlayerConnect"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="RL_OnPlayerUpdate"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="unixTimeConvert"/>
+			<referrer name="OnPlayerShootPlayer"/>
+			<referrer name="getIdFromName"/>
+			<referrer name="initiateTutorial"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="scriptBan"/>
+			<referrer name="IPBan"/>
+			<referrer name="showStats"/>
+			<referrer name="invalidNameChange"/>
+			<referrer name="suspensionCheck"/>
+			<referrer name="RL_OnPlayerStateChange"/>
+			<referrer name="createRelevantItems"/>
+			<referrer name="getPlayerCheckpointReason"/>
+			<referrer name="saveBusiness"/>
+			<referrer name="saveVehicle"/>
+			<referrer name="saveHouse"/>
+			<referrer name="saveAsset"/>
+			<referrer name="saveGroup"/>
+			<referrer name="savePlayerData"/>
+			<referrer name="PurchaseVehicleFromDealer"/>
+			<referrer name="resetPlayerVariables"/>
+			<referrer name="adminLog"/>
+			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_forcelogout"/>
 			<referrer name="cmd_ban"/>
@@ -14710,44 +14420,6 @@
 			<referrer name="cmd_sethelper"/>
 			<referrer name="cmd_vehname"/>
 			<referrer name="cmd_gunname"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_startevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="unixTimeConvert"/>
-			<referrer name="OnPlayerShootPlayer"/>
-			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="SSCANF_OnPlayerConnect"/>
-			<referrer name="getIdFromName"/>
-			<referrer name="initiateTutorial"/>
-			<referrer name="hackerTrigger"/>
-			<referrer name="scriptBan"/>
-			<referrer name="IPBan"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="showStats"/>
-			<referrer name="invalidNameChange"/>
-			<referrer name="suspensionCheck"/>
-			<referrer name="RL_OnPlayerStateChange"/>
-			<referrer name="createRelevantItems"/>
-			<referrer name="getPlayerCheckpointReason"/>
-			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="RL_OnPlayerUpdate"/>
-			<referrer name="saveBusiness"/>
-			<referrer name="saveVehicle"/>
-			<referrer name="saveHouse"/>
-			<referrer name="saveAsset"/>
-			<referrer name="saveGroup"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="savePlayerData"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
-			<referrer name="OnVehicleMod"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="cmd_findcar"/>
-			<referrer name="PurchaseVehicleFromDealer"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
-			<referrer name="resetPlayerVariables"/>
-			<referrer name="adminLog"/>
-			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_time"/>
 			<referrer name="cmd_backup"/>
@@ -14909,6 +14581,8 @@
 			<referrer name="cmd_quitjob"/>
 			<referrer name="cmd_sms"/>
 			<referrer name="cmd_call"/>
+			<referrer name="cmd_givecar"/>
+			<referrer name="cmd_findcar"/>
 			<param name="output">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -15000,7 +14674,6 @@
 		</member>
 		<member name="M:getPlayerCheckpointReason" syntax="getPlayerCheckpointReason(playerid)">
 			<stacksize value="5"/>
-			<referrer name="cmd_findcar"/>
 			<referrer name="cmd_acceptbackup"/>
 			<referrer name="cmd_trackhouse"/>
 			<referrer name="cmd_business"/>
@@ -15010,6 +14683,7 @@
 			<referrer name="cmd_track"/>
 			<referrer name="cmd_getmats"/>
 			<referrer name="cmd_dropcar"/>
+			<referrer name="cmd_findcar"/>
 			<dependency name="format"/>
 			<dependency name="getPlayerCheckpointReason"/>
 			<dependency name="pCheckpoint"/>
@@ -15048,8 +14722,8 @@
 		</member>
 		<member name="M:getdate" syntax="getdate(&amp;year, &amp;month, &amp;day)">
 			<attribute name="native"/>
-			<referrer name="showStats"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="showStats"/>
 			<referrer name="cmd_fingerprint"/>
 			<referrer name="cmd_set"/>
 			<param name="year">
@@ -15064,10 +14738,10 @@
 		</member>
 		<member name="M:gettime" syntax="gettime(&amp;hour, &amp;minute, &amp;second)">
 			<attribute name="native"/>
+			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="unixTimeConvert"/>
 			<referrer name="playerTabbedLoop"/>
 			<referrer name="invalidNameChange"/>
-			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="globalPlayerLoop"/>
 			<referrer name="cmd_time"/>
 			<referrer name="cmd_ad"/>
@@ -15083,8 +14757,8 @@
 		</member>
 		<member name="M:givePlayerValidWeapon" syntax="givePlayerValidWeapon(playerid, weapon)">
 			<stacksize value="5"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="cmd_tazer"/>
 			<referrer name="cmd_accept"/>
 			<referrer name="cmd_vgetweapon"/>
@@ -15101,14 +14775,10 @@
 		</member>
 		<member name="M:givePlayerWeapons" syntax="givePlayerWeapons(playerid)">
 			<stacksize value="6"/>
-			<referrer name="cmd_quitevent"/>
-			<referrer name="cmd_endevent"/>
-			<referrer name="removePlayerWeapon"/>
-			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="RL_OnPlayerUpdate"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="OnPlayerDeath"/>
-			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="removePlayerWeapon"/>
+			<referrer name="RL_OnPlayerStateChange"/>
 			<referrer name="globalPlayerLoop"/>
 			<dependency name="GivePlayerWeapon"/>
 			<dependency name="pWeapons"/>
@@ -15118,7 +14788,6 @@
 			</param>
 		</member>
 		<member name="M:globalPlayerLoop" syntax="globalPlayerLoop()">
-			<attribute name="public"/>
 			<stacksize value="17"/>
 			<dependency name="operator+(Float:,_:)"/>
 			<dependency name="operator+(Float:,Float:)"/>
@@ -15247,17 +14916,17 @@
 		</member>
 		<member name="M:initiateAssets" syntax="initiateAssets()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:initiateBusinesses" syntax="initiateBusinesses()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:initiateConnections" syntax="initiateConnections()">
-			<stacksize value="7"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<stacksize value="9"/>
+			<referrer name="Shits"/>
 			<dependency name="connectionInfo"/>
 			<dependency name="databaseConnection"/>
 			<dependency name="fclose"/>
@@ -15265,6 +14934,7 @@
 			<dependency name="fread"/>
 			<dependency name="io_read"/>
 			<dependency name="mysql_connect"/>
+			<dependency name="printf"/>
 			<dependency name="sscanf"/>
 			<dependency name="szDatabaseHostname"/>
 			<dependency name="szDatabaseName"/>
@@ -15275,7 +14945,7 @@
 		</member>
 		<member name="M:initiateGroups" syntax="initiateGroups()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:initiateHospital" syntax="initiateHospital(playerid)">
@@ -15302,12 +14972,12 @@
 		</member>
 		<member name="M:initiateHouseSpawns" syntax="initiateHouseSpawns()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:initiateJobs" syntax="initiateJobs()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:initiateTutorial" syntax="initiateTutorial(playerid)">
@@ -15339,11 +15009,10 @@
 		</member>
 		<member name="M:initiateVehicleSpawns" syntax="initiateVehicleSpawns()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:invalidNameChange" syntax="invalidNameChange(playerid)">
-			<attribute name="public"/>
 			<stacksize value="10"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="OnDialogResponse"/>
@@ -15365,7 +15034,7 @@
 		</member>
 		<member name="M:loadATMs" syntax="loadATMs()">
 			<stacksize value="6"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="Shits"/>
 			<dependency name="mysql_query"/>
 		</member>
 		<member name="M:loginCheck" syntax="loginCheck(playerid)">
@@ -15383,8 +15052,8 @@
 		</member>
 		<member name="M:mysql_close" syntax="mysql_close(connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="restartTimer"/>
 			<referrer name="OnGameModeExit"/>
+			<referrer name="restartTimer"/>
 			<param name="connectionHandle">
 			</param>
 		</member>
@@ -15402,6 +15071,12 @@
 			</param>
 			<param name="password">
 				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:mysql_debug" syntax="mysql_debug(enable)">
+			<attribute name="native"/>
+			<referrer name="SSCANF_OnGameModeInit"/>
+			<param name="enable">
 			</param>
 		</member>
 		<member name="M:mysql_fetch_field_row" syntax="mysql_fetch_field_row(string[], fieldname[], connectionHandle)">
@@ -15436,8 +15111,8 @@
 		</member>
 		<member name="M:mysql_free_result" syntax="mysql_free_result(connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="getIdFromName"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="getIdFromName"/>
 			<referrer name="cmd_changename"/>
 			<param name="connectionHandle">
 			</param>
@@ -15452,8 +15127,8 @@
 		</member>
 		<member name="M:mysql_num_rows" syntax="mysql_num_rows(connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="getIdFromName"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="getIdFromName"/>
 			<referrer name="cmd_changename"/>
 			<param name="connectionHandle">
 			</param>
@@ -15466,16 +15141,14 @@
 		</member>
 		<member name="M:mysql_query" syntax="mysql_query(query[], resultid, extraid, connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="cmd_ban"/>
-			<referrer name="cmd_unbanip"/>
-			<referrer name="cmd_unban"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
-			<referrer name="loadATMs"/>
 			<referrer name="SSCANF_OnPlayerConnect"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="loadATMs"/>
 			<referrer name="getIdFromName"/>
 			<referrer name="scriptBan"/>
 			<referrer name="IPBan"/>
-			<referrer name="OnQueryFinish"/>
 			<referrer name="createRelevantItems"/>
 			<referrer name="saveBusiness"/>
 			<referrer name="saveVehicle"/>
@@ -15489,9 +15162,11 @@
 			<referrer name="initiateVehicleSpawns"/>
 			<referrer name="initiateGroups"/>
 			<referrer name="savePlayerData"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="adminLog"/>
+			<referrer name="Shits"/>
+			<referrer name="cmd_ban"/>
+			<referrer name="cmd_unbanip"/>
+			<referrer name="cmd_unban"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_suspendbank"/>
 			<referrer name="cmd_ad"/>
@@ -15520,19 +15195,19 @@
 		</member>
 		<member name="M:mysql_real_escape_string" syntax="mysql_real_escape_string(source[], destination[], connectionHandle)">
 			<attribute name="native"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="getIdFromName"/>
+			<referrer name="scriptBan"/>
+			<referrer name="IPBan"/>
+			<referrer name="adminLog"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_ban"/>
 			<referrer name="cmd_kick"/>
 			<referrer name="cmd_fine"/>
 			<referrer name="cmd_unbanip"/>
 			<referrer name="cmd_unban"/>
-			<referrer name="getIdFromName"/>
-			<referrer name="scriptBan"/>
-			<referrer name="IPBan"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
-			<referrer name="adminLog"/>
 			<referrer name="cmd_unsuspendbank"/>
 			<referrer name="cmd_suspendbank"/>
 			<referrer name="cmd_ad"/>
@@ -15564,25 +15239,25 @@
 		</member>
 		<member name="M:mysql_retrieve_row" syntax="mysql_retrieve_row(connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="getIdFromName"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="getIdFromName"/>
 			<param name="connectionHandle">
 			</param>
 		</member>
 		<member name="M:mysql_store_result" syntax="mysql_store_result(connectionHandle)">
 			<attribute name="native"/>
-			<referrer name="getIdFromName"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="getIdFromName"/>
 			<referrer name="cmd_changename"/>
 			<param name="connectionHandle">
 			</param>
 		</member>
 		<member name="M:nearByMessage" syntax="nearByMessage(playerid, color, string[], Distance)">
 			<stacksize value="11"/>
-			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerText"/>
+			<referrer name="OnPlayerShootPlayer"/>
 			<referrer name="cmd_gdeposit"/>
 			<referrer name="cmd_confiscate"/>
 			<referrer name="cmd_gwithdraw"/>
@@ -15659,6 +15334,7 @@
 			<referrer name="zcmd_OnGameModeInit"/>
 			<referrer name="main"/>
 			<referrer name="SSCANF_OnGameModeInit"/>
+			<referrer name="OnGameModeExit"/>
 			<referrer name="getIdFromName"/>
 			<param name="string">
 				<paraminfo> [] </paraminfo>
@@ -15669,10 +15345,30 @@
 			<referrer name="zcmd_OnGameModeInit"/>
 			<referrer name="Itter_ShowArray"/>
 			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="hackerTrigger"/>
+			<referrer name="OnVehicleSpawn"/>
+			<referrer name="OnVehicleDeath"/>
+			<referrer name="SSCANF_OnPlayerConnect"/>
 			<referrer name="OnQueryError"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="OnPlayerInteriorChange"/>
+			<referrer name="OnPlayerExitVehicle"/>
+			<referrer name="Streamer_OnPlayerEnterCP"/>
+			<referrer name="OnPlayerSpawn"/>
+			<referrer name="OnPlayerDeath"/>
+			<referrer name="SSCANF_OnPlayerDisconnect"/>
+			<referrer name="RL_OnPlayerKeyStateChange"/>
+			<referrer name="OnVehicleRespray"/>
+			<referrer name="OnVehiclePaintjob"/>
+			<referrer name="OnEnterExitModShop"/>
+			<referrer name="OnVehicleMod"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="hackerTrigger"/>
+			<referrer name="RL_OnPlayerStateChange"/>
+			<referrer name="OnVehicleStreamIn"/>
 			<referrer name="SpawnPlayerVehicle"/>
+			<referrer name="initiateConnections"/>
+			<referrer name="OnPlayerClickPlayer"/>
 			<referrer name="cmd_vdeposit"/>
 			<referrer name="cmd_hwithdraw"/>
 			<referrer name="cmd_hdeposit"/>
@@ -15687,16 +15383,16 @@
 		<member name="M:random" syntax="random(max)">
 			<attribute name="native"/>
 			<referrer name="Itter_RandomInternal"/>
-			<referrer name="cmd_explode"/>
-			<referrer name="SSCANF_OnGameModeInit"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
-			<referrer name="initiateHospital"/>
 			<referrer name="OnPlayerSpawn"/>
-			<referrer name="PurchaseVehicleFromDealer"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateHospital"/>
+			<referrer name="PurchaseVehicleFromDealer"/>
 			<referrer name="resetPlayerVariables"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="Shits"/>
+			<referrer name="cmd_explode"/>
 			<referrer name="cmd_arrest"/>
 			<referrer name="cmd_untie"/>
 			<referrer name="cmd_tie"/>
@@ -15836,8 +15532,8 @@
 		</member>
 		<member name="M:saveAsset" syntax="saveAsset(id)">
 			<stacksize value="7"/>
-			<referrer name="cmd_savedata"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_taxrate"/>
 			<dependency name="aAssetName"/>
 			<dependency name="aAssetValue"/>
@@ -15852,8 +15548,8 @@
 		</member>
 		<member name="M:saveBusiness" syntax="saveBusiness(id)">
 			<stacksize value="1447"/>
-			<referrer name="cmd_savedata"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_sellbusiness"/>
 			<referrer name="cmd_btype"/>
 			<referrer name="cmd_createbusiness"/>
@@ -15880,9 +15576,9 @@
 		</member>
 		<member name="M:saveGroup" syntax="saveGroup(id)">
 			<stacksize value="14"/>
-			<referrer name="cmd_savedata"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_gdeposit"/>
 			<referrer name="cmd_gwithdraw"/>
 			<dependency name="format"/>
@@ -15911,8 +15607,8 @@
 		</member>
 		<member name="M:saveHouse" syntax="saveHouse(id)">
 			<stacksize value="18"/>
-			<referrer name="cmd_savedata"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_savedata"/>
 			<referrer name="cmd_asellbusiness"/>
 			<referrer name="cmd_asellhouse"/>
 			<referrer name="cmd_sellhouse"/>
@@ -15944,12 +15640,12 @@
 		</member>
 		<member name="M:savePlayerData" syntax="savePlayerData(playerid)">
 			<stacksize value="3523"/>
-			<referrer name="cmd_forcelogout"/>
-			<referrer name="cmd_savedata"/>
-			<referrer name="AFKTimer"/>
 			<referrer name="SSCANF_OnPlayerDisconnect"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="AFKTimer"/>
 			<referrer name="globalPlayerLoop"/>
+			<referrer name="cmd_forcelogout"/>
+			<referrer name="cmd_savedata"/>
 			<dependency name="GetPVarInt"/>
 			<dependency name="GetPlayerArmour"/>
 			<dependency name="GetPlayerHealth"/>
@@ -16047,10 +15743,10 @@
 		</member>
 		<member name="M:scriptBan" syntax="scriptBan(playerid, reason[])">
 			<stacksize value="280"/>
-			<referrer name="cmd_warn"/>
+			<referrer name="OnDialogResponse"/>
 			<referrer name="antiCheat"/>
 			<referrer name="hackerTrigger"/>
-			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_warn"/>
 			<dependency name="GetPlayerIp"/>
 			<dependency name="GetPlayerName"/>
 			<dependency name="Kick"/>
@@ -16160,6 +15856,9 @@
 		</member>
 		<member name="M:sscanf" syntax="sscanf(data[], format[], ...)">
 			<attribute name="native"/>
+			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="initiateConnections"/>
 			<referrer name="cmd_warn"/>
 			<referrer name="cmd_forcelogout"/>
 			<referrer name="cmd_ban"/>
@@ -16192,11 +15891,6 @@
 			<referrer name="cmd_siteat"/>
 			<referrer name="cmd_bar"/>
 			<referrer name="cmd_dance"/>
-			<referrer name="cmd_eventproperties"/>
-			<referrer name="OnQueryFinish"/>
-			<referrer name="cmd_givecar"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="initiateConnections"/>
 			<referrer name="cmd_shakehand"/>
 			<referrer name="cmd_acceptbackup"/>
 			<referrer name="cmd_suspendbank"/>
@@ -16270,6 +15964,7 @@
 			<referrer name="cmd_gtype"/>
 			<referrer name="cmd_pay"/>
 			<referrer name="cmd_sms"/>
+			<referrer name="cmd_givecar"/>
 			<param name="data">
 				<paraminfo> [] </paraminfo>
 			</param>
@@ -16366,13 +16061,13 @@
 		<member name="M:strfind" syntax="strfind(string[], sub[], ignorecase, pos)">
 			<attribute name="native"/>
 			<referrer name="IsPlayerInZone"/>
-			<referrer name="cmd_vehname"/>
-			<referrer name="cmd_gunname"/>
 			<referrer name="SSCANF_OnGameModeInit"/>
-			<referrer name="explode"/>
-			<referrer name="substr_count"/>
 			<referrer name="OnDialogResponse"/>
 			<referrer name="OnPlayerText"/>
+			<referrer name="explode"/>
+			<referrer name="substr_count"/>
+			<referrer name="cmd_vehname"/>
+			<referrer name="cmd_gunname"/>
 			<referrer name="cmd_ooc"/>
 			<param name="string">
 				<paraminfo> [] </paraminfo>
@@ -16388,24 +16083,24 @@
 		</member>
 		<member name="M:strlen" syntax="strlen(string[])">
 			<attribute name="native"/>
-			<referrer name="cmd_ban"/>
-			<referrer name="cmd_unbanip"/>
-			<referrer name="cmd_unban"/>
-			<referrer name="cmd_vehname"/>
-			<referrer name="cmd_gunname"/>
 			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="explode"/>
 			<referrer name="OnQueryFinish"/>
+			<referrer name="OnDialogResponse"/>
+			<referrer name="OnPlayerText"/>
+			<referrer name="explode"/>
 			<referrer name="substr_count"/>
 			<referrer name="forceAdminConfirmPIN"/>
 			<referrer name="saveBusiness"/>
 			<referrer name="saveHouse"/>
 			<referrer name="saveAsset"/>
 			<referrer name="saveGroup"/>
-			<referrer name="OnDialogResponse"/>
-			<referrer name="OnPlayerText"/>
 			<referrer name="getPlayerHouseID"/>
 			<referrer name="getPlayerBusinessID"/>
+			<referrer name="cmd_ban"/>
+			<referrer name="cmd_unbanip"/>
+			<referrer name="cmd_unban"/>
+			<referrer name="cmd_vehname"/>
+			<referrer name="cmd_gunname"/>
 			<referrer name="cmd_helpme"/>
 			<referrer name="cmd_listassets"/>
 			<referrer name="cmd_listgroups"/>
@@ -16440,9 +16135,9 @@
 			<attribute name="native"/>
 			<referrer name="sscanf_weapon"/>
 			<referrer name="sscanf_vehicle"/>
-			<referrer name="cmd_setweather"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="cmd_setweather"/>
 			<referrer name="cmd_setfrequency"/>
 			<referrer name="cmd_taxrate"/>
 			<referrer name="cmd_vgroup"/>
@@ -16470,11 +16165,11 @@
 		<member name="M:submitToAdmins" syntax="submitToAdmins(string[], color)">
 			<stacksize value="6"/>
 			<referrer name="OnPlayerCommandReceived"/>
-			<referrer name="hackerTrigger"/>
 			<referrer name="OnQueryFinish"/>
 			<referrer name="Streamer_OnPlayerEnterCP"/>
 			<referrer name="OnVehicleMod"/>
 			<referrer name="OnDialogResponse"/>
+			<referrer name="hackerTrigger"/>
 			<referrer name="cmd_adminduty"/>
 			<referrer name="cmd_a"/>
 			<referrer name="cmd_report"/>
