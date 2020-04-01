@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "build-normal",
+        "type": "shell",
+        "command": "${workspaceRoot}/pawno/pawncc.exe",
+        "args": [
+            "vx-rp.pwn",
+            "-Dgamemodes",
+            "-;+",
+            "-(+",
+            "-v2",
+            "-d3",
+            "=)+",
+            "-;+",
+            "-r",
+            "-Z+",
+            "-\\)+",
+            "-w 239"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "isBackground": false,
+        "presentation": {
+            "reveal": "silent",
+            "panel": "dedicated"
+        },
+        "problemMatcher": "$pawncc"
+    }]
+}

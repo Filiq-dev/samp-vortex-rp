@@ -1448,3 +1448,105 @@ v0.3e, (C)2005-2012 SA-MP Team
 [10:42:30] Incoming connection: 127.0.0.1:58812
 [10:42:31] [join] Sam_Axe has joined the server (0:127.0.0.1)
 [10:42:46] [part] Sam_Axe has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:39:50] 
+[18:39:50] Server Plugins
+[18:39:50] --------------
+[18:39:50]  Loading plugin: wp
+[18:39:50]  
+[18:39:50]  ==================
+[18:39:50]  
+[18:39:50]   Whirlpool loaded
+[18:39:50]  
+[18:39:50]  ==================
+[18:39:50]  
+[18:39:50]   Loaded.
+[18:39:50]  Loading plugin: sscanf
+[18:39:50] 
+
+[18:39:50]  ===============================
+
+[18:39:50]       sscanf plugin loaded.     
+
+[18:39:50]    (c) 2009 Alex "Y_Less" Cole
+
+[18:39:50]    0.3d-R2 500 Players "dnee"
+
+[18:39:50]  ===============================
+
+[18:39:50]   Loaded.
+[18:39:50]  Loading plugin: streamer
+[18:39:51] 
+
+*** Streamer Plugin v2.6.1 by Incognito loaded ***
+
+[18:39:51]   Loaded.
+[18:39:51]  Loading plugin: mysql
+[18:39:52] 
+
+  > MySQL plugin R6-2 successfully loaded.
+
+[18:39:52]   Loaded.
+[18:39:52]  Loading plugin: irc
+[18:39:52] 
+
+*** IRC Plugin v1.4.2 by Incognito loaded ***
+
+[18:39:52]   Loaded.
+[18:39:52]  Loading plugin: GeoIP_Plugin
+[18:39:52] GeoIP_Plugin got loaded.
+[18:39:52]   Loaded.
+[18:39:52]  Loaded 6 plugins.
+
+[18:39:52] 
+[18:39:52] Filterscripts
+[18:39:52] ---------------
+[18:39:52]   Loaded 0 filterscripts.
+
+[18:39:53] -----------------------------------------------------------------
+[18:39:53] Script: Vortex Roleplay 2 by Calgon and Brian.
+[18:39:53] Status: Loaded OnGameModeInit, running version 2.0.4 (r321)
+[18:39:53] -----------------------------------------------------------------
+[18:39:53] main() has been called.
+[18:39:53] Number of vehicle models: 0
+Console input: gmx
+[18:44:05] -----------------------------------------------------------------
+[18:44:05] Script: Vortex Roleplay 2 by Calgon and Brian.
+[18:44:05] Status: Loaded OnGameModeInit, running version 2.0.4 (r321)
+[18:44:05] -----------------------------------------------------------------
+[18:44:05] main() has been called.
+[18:44:05] Number of vehicle models: 0
+[18:44:05] [script] 227 vehicles loaded.
+[18:44:05] [script] 1 houses loaded.
+[18:50:26] [connection] 127.0.0.1:62091 requests connection cookie.
+[18:50:27] [connection] incoming connection: 127.0.0.1:62091 id: 0
+[18:50:27] [join] Filiq_ has joined the server (0:127.0.0.1)
+[18:54:02] [server] [cmd] Filiq_ (ID 0): /admins
+[18:54:03] [server] [cmd] Filiq_ (ID 0): /help
+[18:54:05] [server] [cmd] Filiq_ (ID 0): /stats
+[18:54:18] [server] [cmd] Filiq_ (ID 0): /engine
+[18:54:19] [server] [cmd] Filiq_ (ID 0): /engine
+[18:54:25] [chat] [Filiq_]: sd
+[18:54:28] [server] [cmd] Filiq_ (ID 0): /oi s
+[18:54:29] [server] [cmd] Filiq_ (ID 0): /o s
+[18:54:30] [server] [cmd] Filiq_ (ID 0): /s asd
+[18:54:34] [server] [cmd] Filiq_ (ID 0): /ooc
+[18:54:35] [server] [cmd] Filiq_ (ID 0): /ooc asd
+[18:54:38] [server] [cmd] Filiq_ (ID 0): /b
+[18:54:39] [server] [cmd] Filiq_ (ID 0): /b c
+[18:54:52] [server] [cmd] Filiq_ (ID 0): /jobs
+[18:54:55] [server] [cmd] Filiq_ (ID 0): /jobs
+[18:54:56] [server] [cmd] Filiq_ (ID 0): /job
+[18:54:57] [server] [cmd] Filiq_ (ID 0): /help
+[18:55:10] [server] [cmd] Filiq_ (ID 0): /gps
+[18:55:12] [server] [cmd] Filiq_ (ID 0): /locations
+[18:55:17] [server] [cmd] Filiq_ (ID 0): /location
+[18:55:17] [server] [cmd] Filiq_ (ID 0): /locations

@@ -93,9 +93,6 @@
 #include				<a_zones>
 #include                <sscanf2>
 
-#include				"vx-admin.pwn"
-#include				"vx-anims.pwn"
-
 #define                 MAX_HOUSES                              (100)
 #define                 MAX_BOTS                                (2)
 #define                 MAX_TIMERS              				(5)
@@ -219,7 +216,7 @@
 #define                 THREAD_RANDOM		                    (22)
 #define                 THREAD_TIMESTAMP_CONNECT                (23)
 #define                 THREAD_LAST_CONNECTIONS                 (24)
-//#define                 THREAD_LOAD_PLAYER_VEHICLES             (25)
+#define                 THREAD_LOAD_PLAYER_VEHICLES             (25)
 #define                 THREAD_ADMIN_SECURITY                   (26)
 #define                 THREAD_INITIATE_BUSINESS_ITEMS          (27)
 #define                 THREAD_UNBAN_IP                         (28)
@@ -577,7 +574,7 @@ new
  	atmVariables[MAX_ATMS][atmE],
  	result[256],
  	szServerWebsite[32],
-	szMediumString[512];
+	szMediumString[512],
  	szLargeString[1024],
  	szPlayerName[MAX_PLAYER_NAME],
  	businessVariables[MAX_BUSINESSES][businessE],
@@ -588,6 +585,10 @@ new
 	playerVariables[MAX_PLAYERS][playervEnum],
 	spikeVariables[MAX_SPIKES][spikeE],
 	scriptTimers[MAX_TIMERS];
+
+#include				"vx-admin.pwn"
+#include				"vx-anims.pwn"
+#include 				"vx-events.pwn"
 
 public OnGameModeInit() {
     AntiDeAMX();
@@ -2046,7 +2047,7 @@ public OnQueryError(errorid, error[], resultid, extraid, callback[], query[], co
 	return printf("errorid: %d | error: %s | resultid: %d | extraid: %d | callback: %s | query: %s", errorid, error, resultid, extraid, callback, query);
 }
 
-/*
+
 public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 	switch(resultid) {
 	    case THREAD_UNBAN_IP: {
@@ -2089,12 +2090,8 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 			    ShowPlayerDialog(extraid, DIALOG_ADMIN_PIN, DIALOG_STYLE_INPUT, "SERVER: Admin authentication verification", "The system has recognised that you have connected with an IP that you've never used before.\n\nPlease confirm your admin PIN to continue:", "OK", "Cancel");
 			} else mysql_free_result();
 		}
-		*/
 		
-		
-		
-		
-		/*case THREAD_LOAD_PLAYER_VEHICLES: {
+		case THREAD_LOAD_PLAYER_VEHICLES: {
 			mysql_store_result();
 			
 			if(mysql_num_rows() == 0)
@@ -2237,8 +2234,8 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 			}
 			
 			mysql_free_result();
-		}*/
-		/*
+		}
+		
 		case THREAD_INITIATE_BUSINESS_ITEMS: {
             mysql_store_result();
 
@@ -2838,8 +2835,8 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 				format(result, sizeof(result), "UPDATE playeraccounts SET playerStatus = '1' WHERE playerID = %d", playerVariables[extraid][pInternalID]);
 				mysql_query(result, THREAD_RANDOM);
 				
-				/*format(result, sizeof(result), "SELECT * FROM playervehicles WHERE pvOwnerId = %d", playerVariables[extraid][pInternalID]);
-				mysql_query(result, THREAD_LOAD_PLAYER_VEHICLES, extraid);*/
+				format(result, sizeof(result), "SELECT * FROM playervehicles WHERE pvOwnerId = %d", playerVariables[extraid][pInternalID]);
+				mysql_query(result, THREAD_LOAD_PLAYER_VEHICLES, extraid); 
 
 				
 				
@@ -2849,7 +2846,7 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 				
 				
 				
-				/*
+				
 			    if(playerVariables[extraid][pFirstLogin] >= 1) {
 			        // Dialog to send player in to quiz and prevent any other code for the player from being executed, as they have to complete the quiz/tutorial first.
 			        return ShowPlayerDialog(extraid, DIALOG_QUIZ, DIALOG_STYLE_LIST, "What is roleplay in SA-MP?", "A type of gamemode where you realistically act out a character\nAn STD\nA track by Jay-Z\nA type of gamemode where you just kill people", "Select", "");
@@ -3314,13 +3311,12 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 			    mysql_get_field("groupSafePosZ", result);
 			    groupVariables[x][gSafePos][2] = floatstr(result);
 
-			  /*  mysql_get_field("groupSafePot", result);
-			    groupVariables[x][gSafe][2] = strval(result);
+				// mysql_get_field("groupSafePot", result);
+			    // groupVariables[x][gSafe][2] = strval(result);
 
-			    mysql_get_field("groupSafeCocaine", result);
-			    groupVariables[x][gSafe][3] = strval(result); Drugs are out for now. */
+			    // mysql_get_field("groupSafeCocaine", result);
+			    // groupVariables[x][gSafe][3] = strval(result);
 				
-				/*
 			    mysql_get_field("groupMOTD", groupVariables[x][gGroupMOTD]);
 
 			    mysql_get_field("groupRankName1", groupVariables[x][gGroupRankName1]);
@@ -3368,7 +3364,7 @@ public OnQueryFinish(query[], resultid, extraid, connectionHandle) {
 
 	return 1;
 }
-*/
+
 
 stock showStats(playerid, targetid) {
 	new
@@ -3567,7 +3563,7 @@ stock suspensionCheck(playerid) {
 	return 0;
 }
 
-stock submitToAdmins(string[], color) {
+stock submitToAdmins(const string[], color) {
 	foreach(Player, x) {
 		if(playerVariables[x][pAdminLevel] >= 1) {
 			SendClientMessage(x, color, string);
@@ -3630,7 +3626,7 @@ stock IsABoat(vehicleid) {
 	return 0;
 }
 
-stock SendToGroupType(type, colour, szMessage2[]) {
+stock SendToGroupType(type, colour, const szMessage2[]) {
 	for(new iGroup; iGroup < MAX_GROUPS; iGroup++) {
 	    if(groupVariables[iGroup][gGroupType] == type)
 	        SendToGroup(iGroup, colour, szMessage2);
@@ -7786,7 +7782,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 	return 1;
 }
 
-stock nearByMessage(playerid, color, string[], Float: Distance = 12.0) {
+stock nearByMessage(playerid, color, const string[], Float: Distance = 12.0) {
 	new
 	    Float: nbCoords[3];
 
@@ -8101,7 +8097,7 @@ stock validResetPlayerWeapons(const playerid) {
 	return 1;
 }
 
-stock adminLog(string[]) {
+stock adminLog(const string[]) {
 	new
 	    queryString[201],
 	    cleanString[128];
@@ -12004,7 +12000,7 @@ CMD:accept(playerid, params[]) {
 				AplayerName[2][MAX_PLAYER_NAME],
 				astring[128];
 
-	   		if(playerOffering != INVALID_PLAYER_ID) {
+	   		if(aplayerOffering != INVALID_PLAYER_ID) {
 				if(IsPlayerInRangeOfPlayer(playerid, aplayerOffering, 5.0)) {
 
 					if(playerVariables[aplayerOffering][pFreezeType] > 0) {
@@ -15372,4 +15368,5 @@ CMD:hangup(playerid)
 	
 	playerVariables[playerid][pPhoneCall] = -1;
 	return 1;
-}
+} 
+

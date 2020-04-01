@@ -258,7 +258,7 @@ CMD:hurt(playerid)
 
 CMD:box(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		ApplyAnimation(playerid, "GYMNASIUM", "GYMshadowbox", 4.0, 1, 0, 0, 0, 0);
 		TextDrawShowForPlayer(playerid, textdrawVariables[5]);
@@ -269,21 +269,21 @@ CMD:box(playerid)
 
 CMD:handwash(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 		ApplyAnimation(playerid, "BD_FIRE", "wash_up", 4.0, 0, 0, 0, 0, 0);
    	return 1;
 }
 
 CMD:crabs(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 		ApplyAnimation(playerid, "MISC", "Scratchballs_01", 4.0, 0, 0, 0, 0, 0);
    	return 1;
 }
 
 CMD:salute(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		ApplyAnimation(playerid, "ON_LOOKERS", "Pointup_loop", 4.0, 1, 0, 0, 0, 0);
 		playerVariables[playerid][pAnimation] = 1;
@@ -293,21 +293,21 @@ CMD:salute(playerid)
 
 CMD:masturbate(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 		ApplyAnimation(playerid, "PAULNMAC", "wank_out", 4.0, 0, 0, 0, 0, 0);
    	return 1;
 }
 
 CMD:stop(playerid)
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 		ApplyAnimation(playerid, "PED", "endchat_01", 4.0, 0, 0, 0, 0, 0);
    	return 1;
 }
 
 CMD:rap(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/rap [1-3]");
 		switch(temp) 
@@ -325,7 +325,7 @@ CMD:rap(playerid, params[])
 
 CMD:chat(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 	{
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/chat [1-7]");
 		switch(temp) 
@@ -345,7 +345,7 @@ CMD:chat(playerid, params[])
 
 CMD:gesture(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
 	{
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/gesture [1-15]");
 		switch(temp) 
@@ -373,7 +373,7 @@ CMD:gesture(playerid, params[])
 
 CMD:lay(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/lay [1-3]");
 		switch(temp) 
@@ -391,7 +391,7 @@ CMD:lay(playerid, params[])
 
 CMD:wave(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/wave [1-3]");
 		switch(temp) 
@@ -407,7 +407,7 @@ CMD:wave(playerid, params[])
 
 CMD:signal(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/signal [1-2]");
 		switch(temp) 
@@ -422,7 +422,7 @@ CMD:signal(playerid, params[])
 
 CMD:nobreath(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/nobreath [1-3]");
 		switch(temp) 
@@ -440,7 +440,7 @@ CMD:nobreath(playerid, params[])
 
 CMD:fallover(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/fallover [1-3]");
 		switch(temp) 
@@ -456,7 +456,7 @@ CMD:fallover(playerid, params[])
 
 CMD:pedmove(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/pedmove [1-26]");
 		switch(temp) 
@@ -497,7 +497,7 @@ CMD:pedmove(playerid, params[])
 
 CMD:getjiggy(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/getjiggy [1-9]");
 		switch(temp) 
@@ -521,7 +521,7 @@ CMD:getjiggy(playerid, params[])
 
 CMD:stripclub(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/stripclub [1-2]");
 		switch(temp) 
@@ -536,7 +536,7 @@ CMD:stripclub(playerid, params[])
 
 CMD:smoke(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/smoke [1-3]");
 		switch(temp) 
@@ -552,7 +552,7 @@ CMD:smoke(playerid, params[])
 
 CMD:dj(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/dj [1-4]");
 		switch(temp) 
@@ -571,7 +571,7 @@ CMD:dj(playerid, params[])
 
 CMD:reload(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/reload - 1 (Desert Eagle), 2 (SPAS12), 3 (UZI/AK-47/M4A1)");
 		switch(temp) 
@@ -587,7 +587,7 @@ CMD:reload(playerid, params[])
 
 CMD:tag(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/tag [1-2]");
 		switch(temp) 
@@ -602,7 +602,7 @@ CMD:tag(playerid, params[])
 
 CMD:deal(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/deal [1-2]");
 		switch(temp) 
@@ -617,7 +617,7 @@ CMD:deal(playerid, params[])
 
 CMD:crossarms(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/crossarms [1-4]");
 		switch(temp) 
@@ -636,7 +636,7 @@ CMD:crossarms(playerid, params[])
 
 CMD:bat(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/bat [1-2]");
 		switch(temp) 
@@ -653,7 +653,7 @@ CMD:bat(playerid, params[])
 
 CMD:cheer(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/cheer [1-8]");
 		switch(temp) 
@@ -674,7 +674,7 @@ CMD:cheer(playerid, params[])
 
 CMD:sit(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/sit [1-6]");
 		switch(temp) 
@@ -695,7 +695,7 @@ CMD:sit(playerid, params[])
 
 CMD:siteat(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/siteat [1-2]");
 		switch(temp) 
@@ -712,7 +712,7 @@ CMD:siteat(playerid, params[])
 
 CMD:bar(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/bar [1-5]");
 		switch(temp) 
@@ -730,7 +730,7 @@ CMD:bar(playerid, params[])
 
 CMD:dance(playerid, params[])
 {
-    if(CanPlayerUseAnimations(playerid))
+    if(CanPlayerUseAnimation(playerid))
     {
 		if(sscanf(params, "d", temp)) return SendClientMessage(playerid, COLOR_GREY, SYNTAX_MESSAGE"/dance [1-4]");
 		switch(temp)
